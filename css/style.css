@@ -269,8 +269,8 @@ nav ul li a {
   border: 1px solid #7b7b7b;
   padding: 10px;
   opacity: 0;
-  -webkit-animation: stagger-reveal 1.5s 1.5s alternate;
-          animation: stagger-reveal 1.5s 1.5s alternate;
+  -webkit-animation: stagger-reveal 1.2s 1.2s alternate;
+          animation: stagger-reveal 1.2s 1.2s alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -296,8 +296,8 @@ nav ul li a {
 }
 
 .suggested a:nth-child(5) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes stagger-reveal {

@@ -368,7 +368,7 @@ nav {
     border: 1px solid #7b7b7b;
     padding: 10px;
     opacity: 0;
-    animation: stagger-reveal 1.5s 1.5s alternate;
+    animation: stagger-reveal 1.2s 1.2s alternate;
     animation-fill-mode: forwards;
 
     &:nth-child(1) {
@@ -388,7 +388,7 @@ nav {
     }
 
     &:nth-child(5) {
-      animation-delay: 0.9s;
+      animation-delay: 1s;
     }
   }
 }
