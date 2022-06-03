@@ -4,7 +4,12 @@
 
       pagination: {
         el: ".swiper-pagination",
-        type: "progressbar",
+        // type: "progressbar",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -35,4 +40,37 @@
       });
 
 
+    });
+
+
+
+
+// popular
+
+    var swiper = new Swiper(".popular_swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+
+      breakpoints: {
+        648 : {
+          slidesPerView: 2,
+        },
+
+        1041 : {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+
+
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "#popular-next",
+        prevEl: "#popular-prev",
+      },
     });
