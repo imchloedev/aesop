@@ -1,0 +1,315 @@
+$body_background: #f1f0e8;
+$heading_font: 'Zapf Humanist';
+
+
+
+// window size
+
+$mobile: 1040px;
+$laptop: 1041px;
+$desktop: 1200px;
+
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
+
+// start
+
+.product__container {
+  padding: 74px 30px 140px 30px;
+
+  >ul {
+    margin-top: 20px;
+
+    li {
+      display: inline-block;
+
+      &:nth-child(1)::after {
+        content: ">";
+        margin: 0 10px;
+      }
+
+      &:nth-child(2) {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+.product__wrapper {
+  margin-top: 40px;
+}
+
+
+.product_detail_img {
+  width: 100%;
+  height: 500px;
+  background-color: #e8e5d4;
+
+  img {
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    object-fit: cover;
+  }
+}
+
+
+.product_detail_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+
+  h3 {
+    margin-bottom: 30px;
+  }
+}
+
+
+.sizeOption {
+  padding: 40px 0 10px 0;
+  display: flex;
+
+  button {
+    width: 50%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #333;
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+
+.sizeOption button.sizeSelected {
+  background-color: #333;
+  color: white;
+}
+
+
+
+.quantity {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .result_value {
+    line-height: 46px;
+    font-weight: 600;
+  }
+
+  div {
+    border: 1px solid #333;
+    // padding: 10px 0;
+    width: 140px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    // margin-top: 10px;
+  }
+
+  #plusbtn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url('../img/icon/plus.png') no-repeat;
+    background-position: center center;
+    background-size: 12px 12px;
+    cursor: pointer;
+  }
+
+  #minusbtn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url('../img/icon/minus.png') no-repeat;
+    background-position: center center;
+    background-size: 12px 12px;
+    cursor: pointer;
+  }
+
+  #result {
+    line-height: 24px;
+    margin: 0 10px;
+  }
+}
+
+
+
+.cartBtn {
+  margin-top: 40px;
+  display: flex;
+
+  button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #333;
+    position: relative;
+    transition: 0.3s;
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+
+  span {
+    width: 120px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-left: 1px solid #666;
+  }
+
+}
+
+
+
+@include laptop {
+
+  .product__wrapper {
+    display: flex;
+  }
+
+
+  .product_detail_img {
+    flex-basis: 50%;
+
+    img {
+      width: 300px;
+      height: 500px;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+      padding-top: 0px;
+    }
+  }
+
+
+  .product_detail_info {
+    flex-basis: 50%;
+    margin-left: 40px;
+    margin-top: 0;
+
+  }
+}
+
+
+@include desktop {
+
+  .product__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.product_explanation {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 2px solid #333;
+}
+
+
+
+.exp_img_box {
+  height: 300px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+
+
+.exp_copy {
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li {
+    padding: 20px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(142, 142, 123);
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+@include laptop {
+
+  .exp_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .exp_img_box {
+    flex-basis: 50%;
+    height: 500px;
+    margin-bottom: 0px;
+
+    img {
+      height: 500px;
+      display: block;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+
+  .exp_copy {
+    flex-basis: 50%;
+    padding-right: 40px;
+  }
+
+
+}

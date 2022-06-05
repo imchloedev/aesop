@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 
 
@@ -68,9 +61,6 @@
 
 $body_background: #f1f0e8;
 $heading_font: 'Zapf Humanist';
-
-
-
 
 
 
@@ -300,6 +290,7 @@ header {
     display: block;
     position: relative;
     z-index: 20;
+    cursor: pointer;
   }
 
   svg {
@@ -329,7 +320,6 @@ nav {
     }
   }
 }
-
 
 
 .search {
@@ -521,9 +511,12 @@ nav {
 
 @include mobile {
 
-  // header {
-  //   border-bottom: 1px solid #414141;
-  // }
+  .headerTop {
+    // top: 0;
+    background-color: $body_background !important;
+    border-bottom: 1px solid #333;
+  }
+  
 
   .gnb {
     position: absolute;
@@ -632,7 +625,6 @@ nav {
 
 
 
-
 .cartadded {
   position: relative;
   transition: 0.4s;
@@ -665,14 +657,6 @@ nav {
     background-color: rgb(181, 74, 74);
   }
 }
-
-
-
-
-
-
-
-
 
 
 // main {
@@ -1036,7 +1020,7 @@ nav {
   position: static;
 
   .swiper-slide {
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 30px 10px;
     transition: 0.3s;
 
     &:hover {
@@ -1132,7 +1116,7 @@ nav {
 
 
 #popular-next {
-  right: -20px;
+  right: -30px;
   // border: 1px solid #333;
   width: 30px;
   height: 30px;
@@ -1150,7 +1134,7 @@ nav {
 
 
 #popular-prev {
-  left: -20px;
+  left: -30px;
   // border: 1px solid #333;
   width: 30px;
   height: 30px;
@@ -1496,13 +1480,7 @@ nav {
     max-width: 320px;
     margin: 0 auto;
   }
-
-
 }
-
-
-
-@include laptop {}
 
 
 
@@ -1517,14 +1495,15 @@ nav {
 
 
 
-// suggested
 
-.suggested {
+// summer
+
+.summer {
   padding: 140px 40px 0 40px;
   text-align: center;
 }
 
-.suggested-copy {
+.summer-copy {
   margin-bottom: 40px;
 
   h2 {
@@ -1538,19 +1517,94 @@ nav {
 }
 
 
-.suggested_img_box {
+.summer_card_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 
   img {
     width: 100%;
+    display: block;
+  }
+}
+
+
+.summer_card {
+  border: 1px solid #333;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #333;
+    background-color: #e0dfd6;
+    display: block;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+
+.summer_card_copy {
+  padding: 20px;
+
+  h5 {
+  
+  }
+}
+
+
+
+.summer_btn {
+  margin-top: 60px;
+
+  button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #333;
+    position: relative;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #333;
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
+@include laptop {
+
+  .summer_card_wrapper  {
+    // display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 }
 
 
 @include desktop {
 
-  .suggested {
+  .summer {
     width: 1200px;
     margin: 0 auto;
   }
@@ -1770,7 +1824,6 @@ footer {
 
 
 .footernav_inner {
-  display: none;
 
   li {
     margin: 10px 0;
@@ -1832,6 +1885,7 @@ footer {
 
   .footernav_inner {
     padding-bottom: 20px;
+    display: none;
   }
 }
 
