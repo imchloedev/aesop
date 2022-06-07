@@ -1,1 +1,146 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.about_title {
+  margin-top: 74px;
+  margin-bottom: 140px;
+  height: 430px;
+  background: url("../img/bg/bg34.jpeg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about_title_copy {
+  height: 100%;
+  padding: 70px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fffef2;
+  text-align: center;
+}
+
+.about_title_copy h1 {
+  margin-bottom: 10px;
+}
+
+.about_title_copy p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .about_title_copy {
+    width: 1200px;
+    margin: 74px auto 0 auto;
+  }
+}
+
+.about_content_container {
+  padding: 0 30px 80px 30px;
+}
+
+@media (min-width: 1200px) {
+  .about_content_container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.about_cotent {
+  margin: 40px 0;
+}
+
+@media (min-width: 1041px) {
+  .about_cotent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 140px;
+  }
+}
+
+@media (min-width: 1041px) {
+  .about_cotent:nth-child(1) .about_img_copy {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1041px) {
+  .about_cotent:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about_cotent:nth-child(2) .about_img_copy {
+    padding-right: 40px;
+  }
+}
+
+.about_img_box {
+  width: 100%;
+  height: 420px;
+}
+
+.about_img_box img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1041px) {
+  .about_img_box {
+    width: 50%;
+  }
+}
+
+.about_img_copy h3 {
+  margin-bottom: 20px;
+  line-height: normal;
+}
+
+.about_img_copy p {
+  line-height: 1.6rem;
+}
+
+@media (max-width: 1040px) {
+  .about_img_copy {
+    margin: 30px 0 80px 0;
+  }
+}
+
+@media (min-width: 1041px) {
+  .about_img_copy {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.about_store_full img {
+  width: 100%;
+}
+
+.about_quote {
+  padding: 220px 0 140px 0;
+  text-align: center;
+}
+
+.about_quote p {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=about.css.map */

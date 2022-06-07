@@ -321,6 +321,11 @@ select {
 
 
 
+
+
+
+
+
 // header
 
 
@@ -618,7 +623,6 @@ nav {
 }
 
 
-
 @include laptop {
 
   header {
@@ -634,17 +638,10 @@ nav {
   }
 
 
-
-
-
   .gnb {
     display: block !important;
     margin-left: 20px;
   }
-
-
-
-
 
 
   nav {
@@ -661,7 +658,6 @@ nav {
     }
   }
 
-
   .nav_btn_mobile {
     display: none;
   }
@@ -671,12 +667,6 @@ nav {
 
 
 @include desktop {
-
-  // .header_container {
-  //   width: 1200px;
-  //   margin: 0 auto;
-  // }
-
 
   .searchWindow_container {
     width: 1200px;
@@ -706,6 +696,7 @@ nav {
 
 }
 
+
 .cartadded.cartnew {
 
   &::after {
@@ -719,12 +710,6 @@ nav {
     background-color: rgb(181, 74, 74);
   }
 }
-
-
-// main {
-//   margin-top: 74px;
-
-// }
 
 
 .main_swiper .swiper-slide.swiper-slide-active {
