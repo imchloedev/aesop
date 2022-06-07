@@ -1,0 +1,135 @@
+.question__cotainer {
+  margin-top: 74px;
+}
+
+.question_title_container {
+  width: 100%;
+  height: 430px;
+  background: url(../img/bg/bg8.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.question_title {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.question_title span {
+  font-weight: 700;
+}
+
+.question_title h1 {
+  margin: 0px 0 14px 0;
+  font-size: 42px;
+}
+
+@media (min-width: 1200px) {
+  .question_title {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.question_tabWrap {
+  padding: 80px 0 140px 0;
+}
+
+.question__list {
+  border: 1px solid #333;
+  text-align: center;
+  height: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.question__list:hover {
+  background-color: #333;
+  color: white;
+}
+
+.question__list h5 {
+  line-height: 50px;
+}
+
+.question__list.tabactive {
+  background-color: #333;
+  color: white;
+}
+
+.tab_cont {
+  margin-top: 40px;
+}
+
+.tab_cont div > ul > li {
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.tab_cont div > ul > li:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.tab_cont div > ul > li span {
+  display: block;
+  background: url("../img/icon/plus.png") no-repeat;
+  background-position: right center;
+  background-size: 16px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab_cont ul li p {
+  display: none;
+  padding: 30px 0 20px 0;
+}
+
+.question__answer > ul > li > span.openAnswer {
+  display: block;
+  background: url("../img/icon/minus.png") no-repeat;
+  background-position: right center;
+  background-size: 16px 16px;
+}
+
+.order_answer {
+  display: none;
+}
+
+.returns_answer {
+  display: none;
+}
+
+.web_answer {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .question_title {
+    text-align: center;
+    color: white;
+  }
+  .question_tabWrap {
+    padding: 80px 30px 140px 30px;
+  }
+}
+
+@media (min-width: 1041px) {
+  .question_tabWrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=question.css.map */

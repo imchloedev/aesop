@@ -1,5 +1,16 @@
+//scroll event script
 
 
+function scrollProgress() {
+  let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight;
+
+  //forEach()
+  document.querySelectorAll(".content__item").forEach(item => {
+    s  > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+  });
+}
+
+window.addEventListener("scroll", scrollProgress);
 
 
 
@@ -114,12 +125,12 @@ var swiper = new Swiper(".popular_swiper", {
   loop: true,
 
   breakpoints: {
-    648: {
+    768: {
       slidesPerView: 2,
     },
 
     1041: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 

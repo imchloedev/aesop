@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-  <title>Product</title>
+  <title>Aesop</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/product.css">
-
+  <link rel="stylesheet" href="css/question.css">
   <style type="text/css"></style>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -40,7 +39,6 @@
 <body>
 
 
-  <!-- header -->
   <header class="header">
     <div class="header_container">
       <div class="header_wrapper">
@@ -162,223 +160,192 @@
   </header>
 
 
-  <article class="product__container" role="main">
 
-    <ul>
-      <li><a href="javascript:void(0)">Product</a></li>
-      <li><a href="javascript:void(0)">Hand Care</a></li>
-    </ul>
+  <article class="question__cotainer" role="main">
 
-    <section class="product__wrapper">
+    <div class="question__wrapper">
 
-      <div class="product_detail_img">
-        <img src="img/product/hand_wash.webp" alt="">
-      </div>
-
-      <div class="product_detail_info">
-
-        <div class="product_detail-copy">
-          <span class="aroma">Citrus, woody, herbaceous</span>
-          <h3>Resurrection Aromatique Hand Wash</h3>
-          <p>A gentle formulation containing oils of Orange, Rosemary and Lavender to effectively cleanse the hands
-            without drying them out.</p>
+      <section class="question_title_container">
+        <div class="question_title">
+          <span>The FAQs</span>
+          <h1>Help Centre</h1>
+          <p>Everything you need to know about product, billing, order, and shipping</p>
         </div>
-
-        <div class="sizeOption">
-          <button class="size_option">500ml</button>
-          <button class="size_option">500ml - refill</button>
-        </div>
-
-        <div class="quantity">
-          <span class="result_value">QUANTITY</span>
-
-          <div>
-            <input type='button' id="plusbtn" onclick='count("plus")'>
-
-            <span id='result'>0</span>
-
-            <input type='button' id="minusbtn" onclick='count("minus")'>
-          </div>
-        </div>
-
-        <div class="cartBtn">
-          <button>Add to cart</button>
-          <span class="product_price">$50.00</span>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="product_explanation">
-      <div class="exp_wrapper">
-        <div class="exp_img_box">
-          <img src="img/product/hand_wash_detail.webp" alt="">
-        </div>
-
-        <div class="exp_copy">
-          <ul>
-            <li>
-              <span>Skin feel</span>
-              <p>Cleansed, refreshed</p>
-            </li>
-
-            <li>
-              <span>Aroma</span>
-              <p>Citrus, woody, herbaceous</p>
-            </li>
-
-            <li>
-              <span>Key ingredients</span>
-              <p>Mandarin Rind, Rosemary Leaf, Cedar Atlas</p>
-            </li>
-
-            <li>
-              <span>Dosage</span>
-              <p>Single pump</p>
-            </li>
-
-            <li>
-              <span>Texture</span>
-              <p>Clear, low-foaming gel</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </article>
+      </section>
 
 
-  <!-- footer -->
-  <footer>
-    <div class="footer_container">
-      <div class="footer_wrapper">
+      <section class="question_tabWrap">
 
-        <section class="social">
-          <div class="email">
-            <h4>News Letter</h4>
-            <input type="text" name="email" id="" placeholder="Email address">
-            <div class="email_checkBox">
-              <input type="checkbox" name="chkbox" id="">
-              <label for="chkbox">Subscribe to receive communications from Aesop about our products and services. By
-                subscribing, you confirm you have read and accept our <span>privacy policy</span>
-              </label>
+        <!-- tab slider -->
+
+        <div class="swiper tab_title">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide question__list tabactive">
+              <h5>General</h5>
             </div>
-          </div>
 
-          <div class="socialmedia">
-            <!-- <span>Social Media</span> -->
-            <ul class="social_inner">
-              <li><a href="javascript:void(0)"></a></li>
-              <li><a href="javascript:void(0)"></a></li>
-              <li><a href="javascript:void(0)"></a></li>
+            <div class="swiper-slide question_order question__list">
+              <h5>Order & Shipping</h5>
+            </div>
+
+            <div class="swiper-slide question_returns question__list">
+              <h5>Returns</h5>
+            </div>
+
+            <div class="swiper-slide question_web question__list">
+              <h5>Website Assistance</h5>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="tab_cont">
+
+          <div class="general_answer question__answer">
+            <ul>
+              <li>
+                <span>Will I receive samples with my order?
+                </span>
+                <p>
+                  Complimentary sample bundles are included with all online orders.
+                  <br>
+                  You will be prompted within the checkout to select an offering from a collection of sample bundles
+                  available.
+                </p>
+              </li>
+
+              <li>
+                <span>How can I return my purchase?</span>
+
+                <p>In the event that a product you have purchased online is not suitable, we would be pleased
+                  coordinate a
+                  return, free of charge.
+                  <br>
+                  To make a return, kindly contact us so we may provide you with a prepaid return postal label. Upon
+                  receiving the return, we will process the refund to the original method of payment.
+                  <br>
+                  Alternatively, online orders purchased using credit card as the payment method may be returned for a
+                  refund at any Aesop store in the country of purchase.
+                  <br>
+                  All returns must be made within thirty days of purchase, or ninety days if the purchase was made
+                  between
+                  1 November and 31 December.
+                  <br>
+                  Kindly note in-store purchases cannot be returned to our online store.
+                  <br>
+                  For more information regarding online and in-store returns, please view our returns policy.
+
+                </p>
+              </li>
+
             </ul>
           </div>
-        </section>
-
-        <section class="footer_nav">
-          <ul>
-            <li>
-              <span class="footer_head footer_head1">Orders and Support
-                <button>
-                  <span class="footerhead_line1"></span>
-                  <span class="footerhead_line2"></span>
-                </button>
-              </span>
-
-              <ul class="footernav_inner order_inner">
-                <li><a href="javascript:void(0)">Contact us</a></li>
-                <li><a href="javascript:void(0)">FAQs</a></li>
-                <li><a href="javascript:void(0)">Shipping</a></li>
-                <li><a href="javascript:void(0)">Returs</a></li>
-                <li><a href="javascript:void(0)">Track your order</a></li>
-                <li><a href="javascript:void(0)">Order history</a></li>
-                <li><a href="javascript:void(0)">Check gift card balance</a></li>
-                <li><a href="javascript:void(0)">Terms and conditions</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="footer_head footer_head2">Services
-                <button>
-                  <span class="footerhead_line1"></span>
-                  <span class="footerhead_line2"></span>
-                </button>
-              </span>
-
-              <ul class="footernav_inner service_inner">
-                <li><a href="javascript:void(0)">Click and Collect</a></li>
-                <li><a href="javascript:void(0)">Live assistance</a></li>
-                <li><a href="javascript:void(0)">Corporate gifts</a></li>
-                <li><a href="javascript:void(0)">Video consultation</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="footer_head footer_head3">Location Preferences
-                <button>
-                  <span class="footerhead_line1"></span>
-                  <span class="footerhead_line2"></span>
-                </button>
-              </span>
-
-              <ul class="footernav_inner location_inner">
-                <li>Shipping:<a href="javascript:void(0)">United States</a></li>
-                <li>Language:<a href="javascript:void(0)">English</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="footer_head footer_head4">About
-                <button>
-                  <span class="footerhead_line1"></span>
-                  <span class="footerhead_line2"></span>
-                </button>
-              </span>
-
-              <ul class="footernav_inner about_inner">
-                <li><a href="javascript:void(0)">Our story</a></li>
-                <li><a href="javascript:void(0)">Foundation</a></li>
-                <li><a href="javascript:void(0)">Careers</a></li>
-                <li><a href="javascript:void(0)">Regulatory policies</a></li>
-                <li><a href="javascript:void(0)">Privacy policy</a></li>
-                <li><a href="javascript:void(0)">Accessibility</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="footer_head footer_head5">Sustainability
-                <button>
-                  <span class="footerhead_line1"></span>
-                  <span class="footerhead_line2"></span>
-                </button>
-              </span>
-
-              <ul class="footernav_inner sus_inner">
-                <li>All Aesop products are vegan, and we do not test our formulations or ingredients on animals. We
-                  are Leaping Bunny approved and a Certified B Corporation. <a href="javascript:void(0)">Learn more</a>
-                </li>
-              </ul>
-            </li>
 
 
-          </ul>
+          <div class="order_answer question__answer">
 
-        </section>
+            <ul>
+              <li>
+                <span>Tracking your parcel</span>
+                <p>You will receive a tracking number by email when your order has been dispatched. Tracking updates
+                  will
+                  be available at track.aesop.com.
+                  <br>
+                  For customers with a registered online profile, tracking information may also be accessed from
+                  within
+                  the Order History section of your account.
+                </p>
+              </li>
 
-      </div>
+              <li>
+                <span>Do you offer international shipping?</span>
+
+                <p>Orders placed on the Aesop Canada website can only be delivered within Canada.
+                  <br>
+                  If you wish to have your order shipped to another country, please open the destination menu from the
+                  footer section of the website and select the country you wish to ship to.
+                  <br>
+                  From here, you will be redirected to the Aesop website that services your chosen region, and can
+                  proceed
+                  to order your items. Note that prices will be displayed in the destination’s currency. If you cannot
+                  find your preferred destination, regrettably we do not ship to that country at this time.
+                  <br>
+                  To purchase Aesop products locally, you can locate your nearest Aesop Signature Store or stockist by
+                  using the Aesop online store locator.</p>
+              </li>
+
+              <li>
+                <span>Can I cancel or amend my order?
+                </span>
+
+                <p>Please contact us if you wish to cancel or amend your order. Although we cannot guarantee this, we
+                  will
+                  happily do our best for any orders that have not already been processed.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="returns_answer question__answer">
+            <ul>
+              <li>
+                <span>Returns</span>
+                <p>We sincerely hope you derive ongoing pleasure from your Aesop products. However, should you find a
+                  product is not suitable, we would be pleased to coordinate a refund or exchange in accordance with
+                  the instructions below.
+                  We will provide you with a refund of the original purchase price or an exchange upon return of the
+                  products, with proof of purchase, if the product was purchased:
+                  <br>
+                  during any time of the year other than between 1 November and 31 December: within thirty days from the date of purchase.
+                  <br>
+                  between 1 November and 31 December: within 90 days of purchase.
+                </p>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="web_answer question__answer">
+            <ul>
+              <li>
+                <span>How do I reset my password?</span>
+                <p>You can reset your password by selecting 'Forgotten Password' in the log in section.</p>
+              </li>
+
+              <li>
+                <span>Do I need an account with Aesop to place an order?</span>
+
+                <p>You do not need to create an account to shop online; rather, you can purchase as a guest.
+                  <br>
+                  However, creating an account will allow you to move more swiftly through the purchasing process: you
+                  will be able to save your personal details, store multiple delivery addresses, peruse past orders,
+                  update subscription details and receive special Aesop customer event invitations and new product
+                  information.
+                  <br>
+                  Creating an account only takes a few minutes and you can do so by clicking here.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </section>
 
     </div>
 
-  </footer>
+  </article>
+
 
 
 
 
   <script src="js/index.js"></script>
-  <script src="js/product.js"></script>
+  <script src="js/question.js"></script>
+
 </body>
+
 
 
 </html>
