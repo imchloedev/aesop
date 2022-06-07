@@ -108,7 +108,7 @@ a:active {
 button {
   border: none;
   background-color: transparent;
-  font-family: 'Helvetica Neue LT Pro';
+  font-family: 'Open Sans', sans-serif;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -133,7 +133,7 @@ input,
 select,
 option,
 textarea {
-  font-family: 'Helvetica Neue LT Pro';
+  font-family: 'Open Sans', sans-serif;
 }
 
 input,
