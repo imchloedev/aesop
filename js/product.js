@@ -36,10 +36,10 @@ function count(type) {
 
 // size 
 
-// $('.size_option').click(function () {
-//   $(this).toggleClass('sizeSelected');
-//   $(this).siblings().removeClass('sizeSelected');
-// });
+$('.size_option').click(function () {
+  $(this).toggleClass('sizeSelected');
+  $(this).siblings().removeClass('sizeSelected');
+});
 
 
 
@@ -57,13 +57,13 @@ function count(type) {
 
 // var size = document.querySelectorAll(".size_option");
 
-document.querySelectorAll(".size_option").forEach((element) => {
+// document.querySelectorAll(".size_option").forEach((element) => {
 
-  element.addEventListener('click', () => {
-    element.classList.toggle('sizeSelected');
-  });
+//   element.addEventListener('click', () => {
+//     element.classList.toggle('sizeSelected');
+//   });
   
-});
+// });
 
 
 

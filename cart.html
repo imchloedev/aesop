@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <script defer src="js/index.js"></script>
+  <script defer src="js/cart.js"></script>
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -102,8 +111,22 @@
                   </li>
 
                   <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+
+                  <li>
                     <a href="about.html">about us</a>
                   </li>
+
+                  <li>
+                    <a href="store.html">Stores</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Articles</a>
+                  </li>
+
+
                 </ul>
               </nav>
             </div>
@@ -160,7 +183,6 @@
       </div>
     </div>
   </header>
-
 
 
   <article class="cart__container" role="main">
@@ -323,137 +345,132 @@
 
 
 
-    <!-- footer -->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_wrapper">
-  
-          <section class="social">
-            <div class="email">
-              <h4>News Letter</h4>
-              <input type="text" name="email" id="" placeholder="Email address">
-              <div class="email_checkBox">
-                <input type="checkbox" name="chkbox" id="">
-                <label for="chkbox">Subscribe to receive communications from Aesop about our products and services. By
-                  subscribing, you confirm you have read and accept our <span>privacy policy</span>
-                </label>
-              </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer_container">
+      <div class="footer_wrapper">
+
+        <section class="social">
+          <div class="email">
+            <h4>News Letter</h4>
+            <input type="text" name="email" id="" placeholder="Email address">
+            <div class="email_checkBox">
+              <input type="checkbox" name="chkbox" id="">
+              <label for="chkbox">Subscribe to receive communications from Aesop about our products and services. By
+                subscribing, you confirm you have read and accept our <span>privacy policy</span>
+              </label>
             </div>
-  
-            <div class="socialmedia">
-              <!-- <span>Social Media</span> -->
-              <ul class="social_inner">
-                <li><a href="javascript:void(0)"></a></li>
-                <li><a href="javascript:void(0)"></a></li>
-                <li><a href="javascript:void(0)"></a></li>
-              </ul>
-            </div>
-          </section>
-  
-          <section class="footer_nav">
-            <ul>
-              <li>
-                <span class="footer_head footer_head1">Orders and Support
-                  <button>
-                    <span class="footerhead_line1"></span>
-                    <span class="footerhead_line2"></span>
-                  </button>
-                </span>
-  
-                <ul class="footernav_inner order_inner">
-                  <li><a href="javascript:void(0)">Contact us</a></li>
-                  <li><a href="javascript:void(0)">FAQs</a></li>
-                  <li><a href="javascript:void(0)">Shipping</a></li>
-                  <li><a href="javascript:void(0)">Returs</a></li>
-                  <li><a href="javascript:void(0)">Track your order</a></li>
-                  <li><a href="javascript:void(0)">Order history</a></li>
-                  <li><a href="javascript:void(0)">Check gift card balance</a></li>
-                  <li><a href="javascript:void(0)">Terms and conditions</a></li>
-                </ul>
-              </li>
-  
-              <li>
-                <span class="footer_head footer_head2">Services
-                  <button>
-                    <span class="footerhead_line1"></span>
-                    <span class="footerhead_line2"></span>
-                  </button>
-                </span>
-  
-                <ul class="footernav_inner service_inner">
-                  <li><a href="javascript:void(0)">Click and Collect</a></li>
-                  <li><a href="javascript:void(0)">Live assistance</a></li>
-                  <li><a href="javascript:void(0)">Corporate gifts</a></li>
-                  <li><a href="javascript:void(0)">Video consultation</a></li>
-                </ul>
-              </li>
-  
-              <li>
-                <span class="footer_head footer_head3">Location Preferences
-                  <button>
-                    <span class="footerhead_line1"></span>
-                    <span class="footerhead_line2"></span>
-                  </button>
-                </span>
-  
-                <ul class="footernav_inner location_inner">
-                  <li>Shipping:<a href="javascript:void(0)">United States</a></li>
-                  <li>Language:<a href="javascript:void(0)">English</a></li>
-                </ul>
-              </li>
-  
-              <li>
-                <span class="footer_head footer_head4">About
-                  <button>
-                    <span class="footerhead_line1"></span>
-                    <span class="footerhead_line2"></span>
-                  </button>
-                </span>
-  
-                <ul class="footernav_inner about_inner">
-                  <li><a href="javascript:void(0)">Our story</a></li>
-                  <li><a href="javascript:void(0)">Foundation</a></li>
-                  <li><a href="javascript:void(0)">Careers</a></li>
-                  <li><a href="javascript:void(0)">Regulatory policies</a></li>
-                  <li><a href="javascript:void(0)">Privacy policy</a></li>
-                  <li><a href="javascript:void(0)">Accessibility</a></li>
-                </ul>
-              </li>
-  
-              <li>
-                <span class="footer_head footer_head5">Sustainability
-                  <button>
-                    <span class="footerhead_line1"></span>
-                    <span class="footerhead_line2"></span>
-                  </button>
-                </span>
-  
-                <ul class="footernav_inner sus_inner">
-                  <li>All Aesop products are vegan, and we do not test our formulations or ingredients on animals. We
-                    are Leaping Bunny approved and a Certified B Corporation. <a href="javascript:void(0)">Learn more</a>
-                  </li>
-                </ul>
-              </li>
-  
-  
+          </div>
+
+          <div class="socialmedia">
+            <!-- <span>Social Media</span> -->
+            <ul class="social_inner">
+              <li><a href="javascript:void(0)"></a></li>
+              <li><a href="javascript:void(0)"></a></li>
+              <li><a href="javascript:void(0)"></a></li>
             </ul>
-  
-          </section>
-  
-        </div>
-  
+          </div>
+        </section>
+
+        <section class="footer_nav">
+          <ul>
+            <li>
+              <span class="footer_head footer_head1">Orders and Support
+                <button>
+                  <span class="footerhead_line1"></span>
+                  <span class="footerhead_line2"></span>
+                </button>
+              </span>
+
+              <ul class="footernav_inner order_inner">
+                <li><a href="javascript:void(0)">Contact us</a></li>
+                <li><a href="javascript:void(0)">FAQs</a></li>
+                <li><a href="javascript:void(0)">Shipping</a></li>
+                <li><a href="javascript:void(0)">Returs</a></li>
+                <li><a href="javascript:void(0)">Track your order</a></li>
+                <li><a href="javascript:void(0)">Order history</a></li>
+                <li><a href="javascript:void(0)">Check gift card balance</a></li>
+                <li><a href="javascript:void(0)">Terms and conditions</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="footer_head footer_head2">Services
+                <button>
+                  <span class="footerhead_line1"></span>
+                  <span class="footerhead_line2"></span>
+                </button>
+              </span>
+
+              <ul class="footernav_inner service_inner">
+                <li><a href="javascript:void(0)">Click and Collect</a></li>
+                <li><a href="javascript:void(0)">Live assistance</a></li>
+                <li><a href="javascript:void(0)">Corporate gifts</a></li>
+                <li><a href="javascript:void(0)">Video consultation</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="footer_head footer_head3">Location Preferences
+                <button>
+                  <span class="footerhead_line1"></span>
+                  <span class="footerhead_line2"></span>
+                </button>
+              </span>
+
+              <ul class="footernav_inner location_inner">
+                <li>Shipping:<a href="javascript:void(0)">United States</a></li>
+                <li>Language:<a href="javascript:void(0)">English</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="footer_head footer_head4">About
+                <button>
+                  <span class="footerhead_line1"></span>
+                  <span class="footerhead_line2"></span>
+                </button>
+              </span>
+
+              <ul class="footernav_inner about_inner">
+                <li><a href="javascript:void(0)">Our story</a></li>
+                <li><a href="javascript:void(0)">Foundation</a></li>
+                <li><a href="javascript:void(0)">Careers</a></li>
+                <li><a href="javascript:void(0)">Regulatory policies</a></li>
+                <li><a href="javascript:void(0)">Privacy policy</a></li>
+                <li><a href="javascript:void(0)">Accessibility</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="footer_head footer_head5">Sustainability
+                <button>
+                  <span class="footerhead_line1"></span>
+                  <span class="footerhead_line2"></span>
+                </button>
+              </span>
+
+              <ul class="footernav_inner sus_inner">
+                <li>All Aesop products are vegan, and we do not test our formulations or ingredients on animals. We
+                  are Leaping Bunny approved and a Certified B Corporation. <a href="javascript:void(0)">Learn more</a>
+                </li>
+              </ul>
+            </li>
+
+
+          </ul>
+
+        </section>
+
       </div>
-  
-    </footer>
+
+    </div>
+
+  </footer>
 
 
 
 
-
-
-  <script src="js/index.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/product.js"></script>
 
 </body>
 

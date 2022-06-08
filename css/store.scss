@@ -1,0 +1,163 @@
+$body_background: #f1f0e8;
+$heading_font: 'Zapf Humanist';
+
+
+
+// window size
+
+$mobile: 1040px;
+$laptop: 1041px;
+$desktop: 1200px;
+
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
+//start
+
+
+.store__container {
+  padding: 80px 30px 140px 30px;
+
+
+  @include desktop {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.store__wrapper {
+  margin-top: 74px;
+
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.map_search_bar {
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+
+  @include laptop {
+    flex-basis: 30%;
+  }
+
+}
+
+
+
+
+.map_title {
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+
+  form {
+    display: flex;
+    border: 1px solid #333;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    padding: 0 20px;
+
+    &::placeholder {
+      color: #333;
+    }
+  }
+
+
+  button {
+    width: 50px;
+    height: 50px;
+    background: url('../img/icon/search.png') no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    border-left: 1px solid #333;
+  }
+}
+
+
+
+.map_result_list {
+  padding: 40px 0;
+
+  ul {
+    height: 445px;
+    // border: 1px solid #333;
+    overflow-y: scroll;
+
+
+    @include mobile {
+      height: 300px;
+    }
+  }
+
+  ul li {
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+    transition: 0.3s;
+
+    &:last-child {
+      border-bottom: 0px solid #333;
+    }
+
+    &:hover {
+      background-color: rgba(175, 172, 153, 0.1);
+    }
+  }
+
+
+  h4 {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.map_box {
+
+
+  @include laptop {
+    flex-basis: 65%;
+  }
+}
+
+
+
+
+// #googleMap {
+//   border: 1px solid gray;
+// }

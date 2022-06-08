@@ -1,0 +1,125 @@
+.store__container {
+  padding: 80px 30px 140px 30px;
+}
+
+@media (min-width: 1200px) {
+  .store__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.store__wrapper {
+  margin-top: 74px;
+}
+
+@media (min-width: 1041px) {
+  .store__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 1040px) {
+  .map_search_bar {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1041px) {
+  .map_search_bar {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+.map_title h2 {
+  margin-bottom: 20px;
+}
+
+.map_title form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #333;
+}
+
+.map_title input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: none;
+  padding: 0 20px;
+}
+
+.map_title input::-webkit-input-placeholder {
+  color: #333;
+}
+
+.map_title input:-ms-input-placeholder {
+  color: #333;
+}
+
+.map_title input::-ms-input-placeholder {
+  color: #333;
+}
+
+.map_title input::placeholder {
+  color: #333;
+}
+
+.map_title button {
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon/search.png") no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  border-left: 1px solid #333;
+}
+
+.map_result_list {
+  padding: 40px 0;
+}
+
+.map_result_list ul {
+  height: 445px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1040px) {
+  .map_result_list ul {
+    height: 300px;
+  }
+}
+
+.map_result_list ul li {
+  padding: 20px 10px;
+  border-bottom: 1px solid #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.map_result_list ul li:last-child {
+  border-bottom: 0px solid #333;
+}
+
+.map_result_list ul li:hover {
+  background-color: rgba(175, 172, 153, 0.1);
+}
+
+.map_result_list h4 {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1041px) {
+  .map_box {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+/*# sourceMappingURL=store.css.map */

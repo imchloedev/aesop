@@ -106,6 +106,7 @@ a:active {
 }
 
 button {
+  color: #333;
   border: none;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
@@ -488,6 +489,11 @@ nav ul li a {
   }
   nav ul li {
     padding: 20px 30px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  nav ul li:hover {
+    background-color: rgba(175, 172, 153, 0.1);
   }
   .header_utility {
     display: -webkit-box;
@@ -514,6 +520,23 @@ nav ul li a {
     display: inline-block;
     margin: 0 10px;
     line-height: 74px;
+    position: relative;
+  }
+  nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background-color: #333;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  nav ul li:hover::after {
+    width: 100%;
   }
   nav ul li a {
     font-weight: 400;

@@ -4,24 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-  <title>Aesop</title>
+  <title>Contact Us</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+
   <style type="text/css"></style>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <script defer src="js/index.js"></script>
+  <script defer src="js/contact.js"></script>
 
-  
-      <script defer src="js/index.js"></script>
-      <script defer src="js/about.js"></script>
 
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -43,7 +44,6 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
-
 
 
 <body>
@@ -184,86 +184,84 @@
   </header>
 
 
-  <article class="about__container" role="main">
+
+  <article class="contact__container" role="main">
 
 
-    <div class="about__wrapper">
+    <div class="contact__wrapper">
 
-      <div class="about_title">
-        <div class="about_title_copy">
-          <span>About Us</span>
-          <h1>Our story</h1>
-          <p> We offer skin, hair and body care formulations created with meticulous attention to detail, and with
-            efficacy and sensory pleasure in mind.
-          </p>
-        </div>
+
+      <div class="contact_title_box">
+
+
+        <h2>Contact Us</h2>
+        <p><br> We'd love to hear from you. <br>
+        Please feel free to contact us and we will get back to you as soon as we can.</p>
+
+        <a href="question.html">Go to the FAQs</a>
+
       </div>
 
 
-      <section class="about_content_container">
-
-        <div class="about_cotent">
-          <div class="about_img_box">
-            <img src="img/bg/bg30.jpeg" alt="">
+      <div class="contact_content_box">
+        <form>
+          <div class="customerEmail_iput">
+            <input type="text" name="contactus_firstname" value="" maxlength="40" placeholder="First Name" required>
+            <label for="contactus_firstname">
+              <span>
+                First Name
+              </span>
+            </label>
           </div>
 
-          <div class="about_img_copy">
-            <h3>Aesop was established in 1987. We are headquartered in Melbourne, and have offices and stores in many
-              parts of the world.</h3>
-            <p>Our objective has always been to formulate skin, hair and body care products of the finest quality; we
-              investigate widely to source plant-based and laboratory-made ingredients, and use only those with a proven
-              record of safety and efficacy.
-              <br><br>
-              In each of our unique stores, informed consultants are pleased to introduce
-              the Aesop range and to guide your selections.</p>
-          </div>
-        </div>
-
-
-        <div class="about_cotent">
-          <div class="about_img_box">
-            <img src="img/bg/bg4.jpg" alt="">
+          <div class="customerEmail_iput">
+            <input id="contactus_lastname" type="text" name="contactus_lastname" value="" maxlength="40"
+              placeholder="Last Name" required>
+            <label for="contactus_lastname">
+              <span>
+                Last Name
+              </span>
+            </label>
           </div>
 
-          <div class="about_img_copy">
-            <h3>A sincere interest in intelligent and sustainable design extends to every aspect of Aesop’s workings.
-            </h3>
-            <p>When considering new locations, it is our intention to weave ourselves into the fabric of the street and
-              add something of merit rather than impose a discordant presence.
-              <br><br>
-              In 2003, in an underground nook in the Melbourne bayside suburb of St Kilda, we hosted our first in-store
-              customers. The space – once a narrow ramp descending into an underground carpark – set the benchmark for
-              future architectural ambitions. In seeking new locations, our first consideration is always to work with
-              what is already in place; we tread lightly with respect for the past, present and future.</p>
+          <div class="customerEmail_iput">
+            <input id="contactus_email" type="text" name="contactus_email" value="" maxlength="50" autocapitalize="off"
+              autocomplete="email" autocorrect="off" placeholder="Email Address" required>
+            <label for="contactus_email">
+              <span>
+                Email Address
+              </span>
+            </label>
           </div>
-        </div>
 
+          <div class="customerEmail_iput">
+            <input class="input-text float-input" id="contactus_orderno" type="text" name="contactus_orderno" value=""
+              maxlength="50" placeholder="Order # (Optional)">
+            <label for="contactus_orderno">
+              <span>
+                Order #
+              </span>
+              <span class="body_2 optionalfield">(Optional)</span>
+            </label>
+          </div>
 
-        <div class="about_store_full">
-          <img src="img/bg/bg33.jpeg" alt="">
-        </div>
+          <div class="customerEmail_message">
+            <label for="contactus_message">
+              <span>
+                Message
+              </span>
+            </label>
+            <textarea class="input-textarea" id="contactus_message" name="contactus_message" maxlength="5000" rows="8"
+              cols="40" placeholder="Message" onkeyup="counter(this, 5000)"></textarea>
+            <span class="form-caption">You have <span id="messagecount">0</span> of 5000
+              characters.</span>
+          </div>
 
-
-        <div class="about_quote">
-          <h3>‘Do not wish to be anything but what you are, and try to be that perfectly’</h3>
-          <p> Saint Francis de Sales</p>
-        </div>
-
-
-
-
-
-        <div>
-
-        </div>
-      </section>
-
-
-
-
-
-
-
+          <div class="customerEmail_send">
+            <button type="submit" onclick="mailSend()">Send</button>
+          </div>
+        </form>
+      </div>
 
 
 
@@ -271,12 +269,11 @@
 
     </div>
 
-
   </article>
 
 
 
-
+<!-- footer -->
   <footer>
     <div class="footer_container">
       <div class="footer_wrapper">
@@ -398,9 +395,6 @@
     </div>
 
   </footer>
-
-
-
 
 
 

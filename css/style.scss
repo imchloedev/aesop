@@ -162,6 +162,7 @@ a:active {
 
 
 button {
+  color: #333;
   border: none;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
@@ -579,6 +580,12 @@ nav {
 
     ul li {
       padding: 20px 30px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(175, 172, 153, 0.1);
+      }
+
     }
   }
 
@@ -617,6 +624,23 @@ nav {
       display: inline-block;
       margin: 0 10px;
       line-height: 74px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1.5px;
+        background-color: #333;
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
 
       a {
         font-weight: 400;
@@ -2001,7 +2025,7 @@ footer {
     // height: 0;
     // transition: height 0.2s;
     // overflow: hidden;
-    
+
   }
 
   // .footernav_inner.footerInner_open {
