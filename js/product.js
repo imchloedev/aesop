@@ -55,7 +55,6 @@ function count(type) {
 
 
 
-
 // var size = document.querySelectorAll(".size_option");
 
 document.querySelectorAll(".size_option").forEach((element) => {
@@ -65,3 +64,7 @@ document.querySelectorAll(".size_option").forEach((element) => {
   });
   
 });
+
+
+
+
