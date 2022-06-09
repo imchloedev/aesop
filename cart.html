@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-  <title>Sign In</title>
+  <title>Cart</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cart.css">
 
@@ -14,10 +14,9 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
   <script defer src="js/index.js"></script>
@@ -208,7 +207,7 @@
           <div class="cart_quantity">
             <div>
               <input type='button' id="plusbtn" onclick='count("plus")'>
-              <span id='result'>0</span>
+              <span id='result'>1</span>
               <input type='button' id="minusbtn" onclick='count("minus")'>
             </div>
           </div>
@@ -217,11 +216,34 @@
           </div>
         </div>
 
+
+        <div class="cart_summary" name="cart_list_1">
+
+          <div class="cart_product_info">
+            <img src="img/product/product5.png" alt="">
+            <div>
+              <h4>Redemption Body Scrub</h4>
+              <span>6.1 fl oz</span>
+            </div>
+          </div>
+
+          <div class="cart_quantity">
+            <div>
+              <input type='button' id="plusbtn" onclick='count("plus")'>
+              <span id='result'>1</span>
+              <input type='button' id="minusbtn" onclick='count("minus")'>
+            </div>
+          </div>
+          <div class="cart_price">
+            <span>$37.00</span>
+          </div>
+        </div>
+
         <div class="cart_summary_price">
           <ul>
             <li>
               <span>Subtotal</span>
-              <span>$50.00</span>
+              <span>$87.00</span>
             </li>
             <li>
               <span>Shipping</span>
@@ -229,7 +251,7 @@
             </li>
             <li>
               <span>Total</span>
-              <span>$50.00</span>
+              <span>$87.00</span>
             </li>
           </ul>
         </div>

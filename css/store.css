@@ -1,16 +1,13 @@
 .store__container {
+  margin-top: 74px;
   padding: 80px 30px 140px 30px;
 }
 
 @media (min-width: 1200px) {
   .store__container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 74px auto 0 auto;
   }
-}
-
-.store__wrapper {
-  margin-top: 74px;
 }
 
 @media (min-width: 1041px) {

@@ -175,7 +175,7 @@ $desktop: 1200px;
 @include mobile {
 
   .member__container {
-    padding: 40px 30px 80px 30px;
+    padding: 80px 30px;
     max-width: 600px;
     margin: 74px auto 0 auto;
   }
@@ -189,6 +189,7 @@ $desktop: 1200px;
   }
 
   .loginContent {
+    margin-top: 74px;
     width: 50%;
   }
 

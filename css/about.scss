@@ -33,26 +33,36 @@ $desktop: 1200px;
 
 
 
-.about_title {
-  margin-top: 74px;
-  margin-bottom: 140px;
-  height: 430px;
-  background: url('../img/bg/bg34.jpeg') no-repeat;
-  background-position: center center;
-  background-size: cover;
-  // background-color: #d5d3c3;
 
+
+
+
+// start
+
+.about__container {
+  margin-top: 74px;
+}
+
+
+.about_title {
+  height: 430px;
+  // background: url('../img/bg/banner_product.jpg') no-repeat;
+  // background-position: right center;
+  // background-size: cover;
+  background-color: #dcdacc;
+
+ 
 }
 
 
 .about_title_copy {
   height: 100%;
-  padding: 70px 30px;
+  padding: 140px 30px 0 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-color: #fffef2;
-text-align: center;
+  justify-content: flex-start;
+  // color: #fffef2;
+  // text-align: center;
 
   h1 {
     margin-bottom: 10px;
@@ -61,7 +71,7 @@ text-align: center;
 
   p {
     width: 70%;
-    margin: 0 auto
+    // margin: 0 auto
   }
 
   @include desktop {
@@ -72,7 +82,7 @@ text-align: center;
 
 
 .about_content_container {
-  padding: 0 30px 80px 30px;
+  padding: 140px 30px;
 
   @include desktop {
     width: 1200px;
@@ -83,11 +93,11 @@ text-align: center;
 
 
 .about_cotent {
-  margin: 40px 0;
+  // margin: 40px 0;
 
   @include laptop {
     display: flex;
-    margin-bottom: 140px;
+    // margin-bottom: 140px;
   }
 }
 
@@ -97,7 +107,7 @@ text-align: center;
   @include laptop {
 
     .about_img_copy {
-      padding-left: 40px;
+      padding: 40px;
     }
   }
 }
@@ -105,26 +115,46 @@ text-align: center;
 
 .about_cotent:nth-child(2) {
 
+  @include mobile {
+     .about_img_copy {
+      background-color: #c3c2ba;
+    }
+  }
+
   @include laptop {
     flex-direction: row-reverse;
 
     .about_img_copy {
-      padding-right: 40px;
+      padding: 40px;
+    }
+  }
+}
+
+.about_cotent:nth-child(3) {
+  
+   @include mobile {
+     .about_img_copy {
+      background-color: #c0bda7;
+    }
+  }
+
+  @include laptop {
+
+    .about_img_copy {
+      padding: 40px;
     }
   }
 }
 
 
 
-
-
 .about_img_box {
   width: 100%;
-  height: 420px;
+  height: 480px;
 
   img {
     width: 100%;
-    height: 420px;
+    height: 480px;
     object-fit: cover;
   }
 
@@ -135,18 +165,17 @@ text-align: center;
 
 
 .about_img_copy {
+  background-color: #e9e8de;
 
   h3 {
     margin-bottom: 20px;
     line-height: normal;
+    color: #322a25;
   }
 
-  p {
-    line-height: 1.6rem;
-  }
 
   @include mobile {
-    margin: 30px 0 80px 0;
+    padding: 80px 40px;
   }
 
   @include laptop {
@@ -160,6 +189,7 @@ text-align: center;
 
 
 .about_store_full {
+  display: none;
   img {
     width: 100%;
   }

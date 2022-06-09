@@ -36,33 +36,29 @@ $desktop: 1200px;
 
 
 
+.contact__container {
+  margin-top: 74px;
+  padding: 0 30px 140px 30px;
 
+  @include desktop {
+    width: 1200px;
+    margin: 74px auto 0 auto;
+  }
+}
 
 
 .contact__wrapper {
-  padding: 74px 30px 140px 30px;
-
 
   @include laptop {
     display: flex;
     justify-content: space-between;
   }
-
-  @include desktop {
-    width: 1200px;
-    margin: 0 auto;
-    // border: 1px solid gray;
-  }
 }
-
 
 
 
 .contact_title_box {
   padding-top: 80px;
-
-  // border: 1px solid gray;
-
 
   a {
     margin-top: 60px;
@@ -72,6 +68,21 @@ $desktop: 1200px;
     background-size: 14px 14px;
     padding-left: 20px;
     cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      border-bottom: solid 1px #222;
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+      width: 0;
+      transition: all 0.4s ease;
+    }
+
+    &:hover::before {
+      width: calc(100% - 20px);
+    }
   }
 
 
@@ -90,10 +101,6 @@ $desktop: 1200px;
     flex-basis: 65%;
   }
 }
-
-
-
-
 
 
 .customerEmail_iput {

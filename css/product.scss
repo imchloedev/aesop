@@ -33,10 +33,53 @@ $desktop: 1200px;
 
 
 
+
+
+
+
+
+
+
+
+@include laptop {
+
+  .product_detail_img {
+    flex-basis: 50%;
+
+    img {
+      width: 300px;
+      height: 500px;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+      padding-top: 0px;
+    }
+  }
+
+
+  .product_detail_info {
+    flex-basis: 50%;
+    margin-left: 40px;
+    margin-top: 0;
+
+  }
+}
+
+
+
+
+
+
 // start
 
 .product__container {
-  padding: 74px 30px 140px 30px;
+  margin-top: 74px;
+  padding: 30px 30px 140px 30px;
+
+  @include desktop {
+    width: 1200px;
+    margin: 74px auto 0 auto;
+  }
 
   >ul {
     margin-top: 20px;
@@ -54,11 +97,16 @@ $desktop: 1200px;
       }
     }
   }
+
 }
 
 
 .product__wrapper {
   margin-top: 40px;
+
+  @include laptop {
+    display: flex;
+  }
 }
 
 
@@ -74,6 +122,16 @@ $desktop: 1200px;
     margin: 0 auto;
     padding-top: 80px;
     object-fit: cover;
+  }
+
+  @include laptop {
+    flex-basis: 50%;
+
+    img {
+      width: 300px;
+      height: 500px;
+      padding-top: 0px;
+    }
   }
 }
 
@@ -106,11 +164,11 @@ $desktop: 1200px;
   }
 }
 
+
 .sizeOption button.sizeSelected {
   background-color: #333;
   color: white;
 }
-
 
 
 .quantity {
@@ -125,41 +183,41 @@ $desktop: 1200px;
 
   div {
     border: 1px solid #333;
-    // padding: 10px 0;
     width: 140px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     padding: 10px 24px;
-    // margin-top: 10px;
-  }
-
-  #plusbtn {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: url('../img/icon/plus.png') no-repeat;
-    background-position: center center;
-    background-size: 12px 12px;
-    cursor: pointer;
-  }
-
-  #minusbtn {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: url('../img/icon/minus.png') no-repeat;
-    background-position: center center;
-    background-size: 12px 12px;
-    cursor: pointer;
-  }
-
-  #result {
-    line-height: 24px;
-    margin: 0 10px;
   }
 }
 
+
+#plusbtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url('../img/icon/plus.png') no-repeat;
+  background-position: center center;
+  background-size: 12px 12px;
+  cursor: pointer;
+}
+
+
+#minusbtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url('../img/icon/minus.png') no-repeat;
+  background-position: center center;
+  background-size: 12px 12px;
+  cursor: pointer;
+}
+
+
+#result {
+  line-height: 24px;
+  margin: 0 10px;
+}
 
 
 .cartBtn {
@@ -181,7 +239,6 @@ $desktop: 1200px;
     }
   }
 
-
   span {
     width: 120px;
     height: 50px;
@@ -195,53 +252,19 @@ $desktop: 1200px;
 }
 
 
-
-@include laptop {
-
-  .product__wrapper {
-    display: flex;
-  }
-
-
-  .product_detail_img {
-    flex-basis: 50%;
-
-    img {
-      width: 300px;
-      height: 500px;
-      display: block;
-      margin: 0 auto;
-      object-fit: cover;
-      padding-top: 0px;
-    }
-  }
-
-
-  .product_detail_info {
-    flex-basis: 50%;
-    margin-left: 40px;
-    margin-top: 0;
-
-  }
-}
-
-
-@include desktop {
-
-  .product__container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-
-
 .product_explanation {
   margin-top: 80px;
   padding-top: 40px;
   border-top: 2px solid #333;
 }
 
+.exp_wrapper {
+
+  @include laptop {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 
 
 .exp_img_box {
@@ -255,11 +278,25 @@ $desktop: 1200px;
     object-fit: cover;
     margin: 0 auto;
   }
+
+  @include laptop {
+    flex-basis: 50%;
+    height: 500px;
+    margin-bottom: 0px;
+
+    img {
+      height: 500px;
+    }
+  }
 }
 
 
-
 .exp_copy {
+
+  @include laptop {
+    flex-basis: 50%;
+    padding-right: 40px;
+  }
 
   ul {
     height: 100%;
@@ -282,34 +319,4 @@ $desktop: 1200px;
     display: block;
     margin-bottom: 5px;
   }
-}
-
-
-
-@include laptop {
-
-  .exp_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .exp_img_box {
-    flex-basis: 50%;
-    height: 500px;
-    margin-bottom: 0px;
-
-    img {
-      height: 500px;
-      display: block;
-      object-fit: cover;
-      margin: 0 auto;
-    }
-  }
-
-  .exp_copy {
-    flex-basis: 50%;
-    padding-right: 40px;
-  }
-
-
 }
