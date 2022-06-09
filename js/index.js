@@ -89,9 +89,13 @@ var noticeswiper = new Swiper(".notice_swiper", {
   loop: true,
   speed: 4000,
   // direction: "vertical",
-  freeMode: true,
+  // freeMode: true,
   slidesPerView: '3',
   spaceBetween: 0,
+  // allowTouchMove: false,
+  // touchRatio: 0,
+  
+  
 
   autoplay: {
     delay: 0,
