@@ -322,6 +322,15 @@ $desktop: 1200px;
 .related__product_swiper {
   padding-bottom: 100px !important;
 
+   .swiper-slide {
+    padding: 0 10px 30px 10px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgba(175, 172, 153, 0.1);
+    }
+  }
+
   .swiper-pagination {
 
     .swiper-pagination-bullet {
@@ -373,8 +382,6 @@ $desktop: 1200px;
   }
 
 }
-
-
 
 
 .related_product_img {

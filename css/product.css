@@ -296,6 +296,16 @@
   padding-bottom: 100px !important;
 }
 
+.related__product_swiper .swiper-slide {
+  padding: 0 10px 30px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.related__product_swiper .swiper-slide:hover {
+  background-color: rgba(175, 172, 153, 0.1);
+}
+
 .related__product_swiper .swiper-pagination .swiper-pagination-bullet {
   width: 5%;
   height: 1.5px;
