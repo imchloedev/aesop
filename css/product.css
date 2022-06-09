@@ -1,25 +1,3 @@
-@media (min-width: 1041px) {
-  .product_detail_img {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .product_detail_img img {
-    width: 300px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    padding-top: 0px;
-  }
-  .product_detail_info {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-left: 40px;
-    margin-top: 0;
-  }
-}
-
 .product__container {
   margin-top: 74px;
   padding: 30px 30px 140px 30px;
@@ -105,6 +83,15 @@
 
 .product_detail_info h3 {
   margin-bottom: 30px;
+}
+
+@media (min-width: 1041px) {
+  .product_detail_info {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-left: 40px;
+    margin-top: 0;
+  }
 }
 
 .sizeOption {
@@ -295,5 +282,79 @@
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
+}
+
+.product__related_container {
+  margin-top: 140px;
+}
+
+.product__related_title_box {
+  margin-bottom: 40px;
+}
+
+.related__product_swiper {
+  padding-bottom: 100px !important;
+}
+
+.related__product_swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 5%;
+  height: 1.5px;
+  border-radius: 0;
+  margin: 0 !important;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.related__product_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 10%;
+  background-color: #333;
+}
+
+.related__product_swiper .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+}
+
+.related__product_swiper .swiper-button-next::after {
+  font-size: 18px;
+  color: #333;
+}
+
+.related__product_swiper .swiper-button-next.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+.related__product_swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+}
+
+.related__product_swiper .swiper-button-prev::after {
+  font-size: 18px;
+  color: #333;
+}
+
+.related__product_swiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.related_product_img {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+}
+
+.related_product_img img {
+  width: 120px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=product.css.map */

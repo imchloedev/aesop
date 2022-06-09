@@ -86,7 +86,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 
@@ -213,13 +213,6 @@ select {
 
 
 
-.notice {
-  display: none;
-}
-
-
-
-
 // scroll event
 
 .content__item {
@@ -262,19 +255,19 @@ select {
 .summer_card_wrapper {
 
   .summer_card:nth-child(1) {
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
   }
 
   .summer_card:nth-child(2) {
-    transition-delay: 0.5s;
+    transition-delay: 0.4s;
   }
 
   .summer_card:nth-child(3) {
-    transition-delay: 0.7s;
+    transition-delay: 0.6s;
   }
 
   .summer_card:nth-child(4) {
-    transition-delay: 0.9s;
+    transition-delay: 0.8s;
   }
 }
 
@@ -796,6 +789,7 @@ main {
   @include mobile {
 
     img {
+      width: 100vw;
       height: 100vh;
       object-fit: cover;
     }
@@ -813,10 +807,6 @@ main {
     }
   }
 }
-
-
-
-
 
 
 
@@ -1015,6 +1005,34 @@ main {
 }
 
 
+
+//notice
+
+.notice {
+  width: 100%;
+}
+
+
+.notice_swiper {
+  height: 50px !important;
+  border-bottom: 1px solid gray;
+
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    line-height: 50px;
+
+    a {
+      display: block;
+      text-transform: uppercase;
+    }
+
+  }
+
+}
 
 
 

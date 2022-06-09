@@ -57,11 +57,13 @@ window.onscroll = function sticky() {
 var swiper = new Swiper(".main_swiper", {
   loop: true,
   speed: 1000,
+  slidesPerView: 1,
+  spaceBetween: 0,
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 
 
   pagination: {
@@ -78,6 +80,27 @@ var swiper = new Swiper(".main_swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+//notice
+
+var noticeswiper = new Swiper(".notice_swiper", {
+  loop: true,
+  speed: 4000,
+  // direction: "vertical",
+  freeMode: true,
+  slidesPerView: '3',
+  spaceBetween: 0,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+
+});
+
+
 
 
 

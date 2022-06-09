@@ -185,15 +185,17 @@ $desktop: 1200px;
 
 
 .cart_summary_price {
+  padding: 30px 0;
 
   ul {
 
     li {
-      padding: 20px 0;
+      padding-bottom: 20px;
       display: flex;
       justify-content: space-between;
 
       &:last-child {
+        padding-top: 20px;
         border-top: 2px solid #333;
       }
     }

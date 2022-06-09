@@ -42,7 +42,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -149,10 +149,6 @@ select {
           appearance: none;
 }
 
-.notice {
-  display: none;
-}
-
 .content__item {
   opacity: 0;
   -webkit-transition: all 1s;
@@ -192,23 +188,23 @@ select {
 }
 
 .summer_card_wrapper .summer_card:nth-child(1) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .summer_card_wrapper .summer_card:nth-child(2) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .summer_card_wrapper .summer_card:nth-child(3) {
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .summer_card_wrapper .summer_card:nth-child(4) {
-  -webkit-transition-delay: 0.9s;
-          transition-delay: 0.9s;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 
 .content__item.show {
@@ -706,6 +702,7 @@ nav ul li a {
 
 @media (max-width: 1040px) {
   .main_img img {
+    width: 100vw;
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
@@ -923,6 +920,30 @@ nav ul li a {
     line-height: 40px;
     font-size: 14px;
   }
+}
+
+.notice {
+  width: 100%;
+}
+
+.notice_swiper {
+  height: 50px !important;
+  border-bottom: 1px solid gray;
+}
+
+.notice_swiper .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+}
+
+.notice_swiper .swiper-slide {
+  text-align: center;
+  line-height: 50px;
+}
+
+.notice_swiper .swiper-slide a {
+  display: block;
+  text-transform: uppercase;
 }
 
 .popular {
