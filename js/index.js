@@ -94,8 +94,8 @@ var noticeswiper = new Swiper(".notice_swiper", {
   spaceBetween: 0,
   // allowTouchMove: false,
   // touchRatio: 0,
-  
-  
+
+
 
   autoplay: {
     delay: 0,
@@ -141,8 +141,8 @@ document.querySelector('.search_closeBtn').addEventListener('click', () => {
 document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
   document.querySelector('.gnb').classList.toggle('gnbOpen');
   document.querySelector('.nav_btn_mobile button').classList.toggle('navOpen');
+  document.querySelector('.body').classList.toggle('bodyfixed');
 });
-
 
 
 
@@ -211,45 +211,33 @@ var swiper = new Swiper(".location_swiper", {
 
 // footer 
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-  $('.footer_head').click(function () {
-    $(this).next('.footernav_inner').slideToggle();
-    $(this).toggleClass('footernavOpen');
-  });
+//   $('.footer_head').click(function () {
+//     $(this).next('.footernav_inner').slideToggle();
+//     $(this).toggleClass('footernavOpen');
+//   });
 
-  $('.footer_nav >ul >li').click(function () {
-    $(this).siblings().find('.footernav_inner').slideUp();
-    $(this).siblings().find('.footer_head').removeClass('footernavOpen');
-  });
+//   $('.footer_nav >ul >li').click(function () {
+//     $(this).siblings().find('.footernav_inner').slideUp();
+//     $(this).siblings().find('.footer_head').removeClass('footernavOpen');
+//   });
 
+// });
+
+
+
+
+
+
+let footertitle = document.querySelectorAll('.footer_head');
+
+let footerinner = document.querySelectorAll('.footernav_inner');
+
+
+
+footertitle.forEach(el => {
+  el.addEventListener('click', toggleAccordion)
 });
 
 
-
-
-
-
-// var footerHead = document.querySelector('.footer_head');
-
-// document.querySelectorAll('.footer_head').forEach(() => {
-
-
-
-// });
-
-
-
-// footerHead.addEventListener('click', () => {
-//   document.querySelector('.footernav_inner').classList.toggle('footerInner_open');
-
-// });
-
-
-
-
-
-// document.querySelectorAll('.footer_head').forEach((element, index) => {
-//   console.log(element, index);
-
-// });

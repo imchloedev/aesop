@@ -281,6 +281,12 @@ select {
 
 
 
+.body.bodyfixed {
+  overflow-y: hidden;
+}
+
+
+
 // header
 
 
@@ -366,6 +372,7 @@ header {
     background-color: $body_background;
     position: fixed;
     transition: 0.3s;
+    overflow-y: scroll;
   }
 
   @include laptop {
