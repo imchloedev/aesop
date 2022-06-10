@@ -170,8 +170,15 @@
 }
 
 .tab_cont ul li p {
-  display: none;
+  height: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.42, 0.2, 0.08, 1);
+  transition: all 0.4s cubic-bezier(0.42, 0.2, 0.08, 1);
+  overflow: hidden;
+}
+
+.tab_cont ul li p.answerActive {
   padding: 30px 0 20px 0;
+  height: auto;
 }
 
 .question__answer > ul > li > span.openAnswer {

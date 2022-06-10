@@ -60,10 +60,10 @@ var swiper = new Swiper(".main_swiper", {
   slidesPerView: 1,
   spaceBetween: 0,
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
 
   pagination: {
@@ -132,11 +132,17 @@ var noticeswiper = new Swiper(".notice_swiper", {
 
 document.querySelector('.search').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.add('searchWindow_fadeIn');
+  document.querySelector('.body').classList.add('bodyfixed');
 });
+
 
 document.querySelector('.search_closeBtn').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.remove('searchWindow_fadeIn');
+  document.querySelector('.body').classList.remove('bodyfixed');
 });
+
+
+
 
 document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
   document.querySelector('.gnb').classList.toggle('gnbOpen');
@@ -229,6 +235,8 @@ var swiper = new Swiper(".location_swiper", {
 
 
 
+//footer javascript
+
 
 let footertitle = document.querySelectorAll('.footer_head');
 
@@ -237,7 +245,30 @@ let footerinner = document.querySelectorAll('.footernav_inner');
 
 
 footertitle.forEach(el => {
-  el.addEventListener('click', toggleAccordion)
+  el.addEventListener('click', toggleAccordion);
 });
 
 
+function toggleAccordion(el) {
+
+  let targetInner = el.currentTarget.nextElementSibling.classList;
+  let target = el.currentTarget;
+
+  if (targetInner.contains('footernav_inner_active')) {
+    targetInner.remove('footernav_inner_active');
+    target.classList.remove('footernavOpen');
+  } else {
+    footertitle.forEach(el => {
+      el.classList.remove('footernavOpen');
+
+      footerinner.forEach(el => {
+        el.classList.remove('footernav_inner_active');
+      });
+    });
+
+    targetInner.add('footernav_inner_active');
+    target.classList.add('footernavOpen');
+
+  };
+
+};

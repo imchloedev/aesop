@@ -25,7 +25,6 @@ function count(type) {
 
   // 결과 출력
   resultElement.innerText = number;
-  resultAdultsElement.innerText = number;
 };
 
 
@@ -36,34 +35,39 @@ function count(type) {
 
 // size 
 
-$('.size_option').click(function () {
-  $(this).toggleClass('sizeSelected');
-  $(this).siblings().removeClass('sizeSelected');
+// $('.size_option').click(function () {
+//   $(this).toggleClass('sizeSelected');
+//   $(this).siblings().removeClass('sizeSelected');
+// });
+
+
+
+//size toggle button 
+
+let option = document.querySelectorAll('.size_option');
+
+option.forEach( el => {
+  el.addEventListener('click', toggleBtn)
 });
 
 
+function toggleBtn(el) {
 
-// document.querySelectorAll('.sizeOption button').addEventListener('click', () => {
+  let target = el.currentTarget;
 
-//   // document.querySelector('.size_option').classList.add('sizeSelected');
+  if (target.classList.contains('sizeSelected')) {
+    target.classList.remove('sizeSelected');
+  }
 
+  else {
+   option.forEach( el => {
+     el.classList.remove('sizeSelected');
+   });
 
-//   // document.querySelector('.size_option').nextElementSibling.classList.remove('sizeSelected');
+   target.classList.add('sizeSelected');
 
-
-// });
-
-
-
-// var size = document.querySelectorAll(".size_option");
-
-// document.querySelectorAll(".size_option").forEach((element) => {
-
-//   element.addEventListener('click', () => {
-//     element.classList.toggle('sizeSelected');
-//   });
-  
-// });
+  }
+}
 
 
 

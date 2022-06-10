@@ -182,9 +182,17 @@ $desktop: 1200px;
   }
 
   ul li p {
-    display: none;
-    padding: 30px 0 20px 0;
+    height: 0;
+    transition: all 0.4s cubic-bezier(.42, .2, .08, 1);
+    overflow: hidden;
+
   }
+}
+
+
+.tab_cont ul li p.answerActive {
+    padding: 30px 0 20px 0;
+    height: auto;
 }
 
 
