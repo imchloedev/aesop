@@ -101,6 +101,11 @@ document.querySelector('.search').addEventListener('click', () => {
   document.querySelectorAll('.suggested a').forEach(el => {
     el.classList.add('stagger_active');
   });
+
+  //when gnb opened, open searh -> reset gnb, navbtn 
+  document.querySelector('.gnb').classList.remove('gnbOpen');
+  document.querySelector('.nav_btn_mobile button').classList.remove('navOpen');
+
 });
 
 document.querySelector('.search_closeBtn').addEventListener('click', () => {

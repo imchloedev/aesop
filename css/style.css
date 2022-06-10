@@ -220,7 +220,7 @@ select {
 .cart_modal {
   display: none;
   width: 100%;
-  height: 100px;
+  height: 74px;
   background-color: rgba(220, 218, 204, 0.9);
   position: absolute;
   top: 0;
@@ -232,7 +232,7 @@ select {
   text-align: center;
   font-family: "Zapf Humanist";
   font-size: 24px;
-  line-height: 100px;
+  line-height: 74px;
 }
 
 .cart_modal.modal_show {
@@ -1818,15 +1818,33 @@ footer {
 }
 
 .email_checkBox {
-  margin-top: 10px;
+  margin: 20px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .email_checkBox input {
-  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
   width: 14px;
   height: 14px;
   border: 1px solid #333;
   background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.email_checkBox input:checked {
+  background: url("../img/icon/checked.png") no-repeat;
+  background-position: center center;
+  background-size: 12px 12px;
+}
+
+.email_checkBox label {
+  line-height: 14px;
 }
 
 .socialmedia ul li {
@@ -1922,9 +1940,11 @@ footer {
   }
 }
 
-.footernav_inner.footernav_inner_active {
-  height: auto;
-  padding-bottom: 20px;
+@media (max-width: 1040px) {
+  .footernav_inner.footernav_inner_active {
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 1040px) {
