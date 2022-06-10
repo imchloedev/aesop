@@ -307,10 +307,6 @@ select {
     line-height: 74px;
   }
 
-
-  // @include laptop {
-  //   top: 74px;
-  // }
 }
 
 
@@ -320,9 +316,7 @@ select {
 
 
 
-
 // header
-
 
 header {
   width: 100%;
@@ -341,12 +335,11 @@ header {
 .headerTop {
 
   @include mobile {
-    // top: 0;
+    top: 0;
     background-color: $body_background !important;
     border-bottom: 1px solid #333;
   }
 }
-
 
 
 .header_container {
@@ -428,10 +421,10 @@ header {
 
 
 .gnb_container {
+
   @include mobile {
     padding: 140px 0 40px 0;
   }
-
 }
 
 
@@ -449,7 +442,6 @@ nav {
         background-color: rgba(175, 172, 153, 0.1);
       }
     }
-
 
     @include laptop {
       display: inline-block;

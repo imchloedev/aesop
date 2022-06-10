@@ -1,6 +1,5 @@
 //scroll event script
 
-
 function scrollProgress() {
   let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight;
 
@@ -40,13 +39,6 @@ window.onscroll = function sticky() {
     nav[0].classList.remove('headerTop');
   }
 };
-
-
-// cart item added button
-
-// document.querySelector('.cartBtn').addEventListener('click', () => {
-//   document.querySelector('.cartadded').classList.add('cartnew');
-// });
 
 
 
