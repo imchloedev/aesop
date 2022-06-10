@@ -1,13 +1,8 @@
 // quantity
 
 function count(type) {
-  // 결과를 표시할 element
   const resultElement = document.getElementById('result');
-  const resultAdultsElement = document.getElementById('adults_result');
 
-  // const reset = document.getElementById('resetbtn');
-
-  // 현재 화면에 표시된 값
   let number = resultElement.innerText;
 
   // 더하기/빼기
@@ -23,22 +18,9 @@ function count(type) {
     };
   };
 
-  // 결과 출력
   resultElement.innerText = number;
 };
 
-
-
-
-
-
-
-// size 
-
-// $('.size_option').click(function () {
-//   $(this).toggleClass('sizeSelected');
-//   $(this).siblings().removeClass('sizeSelected');
-// });
 
 
 
@@ -68,11 +50,6 @@ function toggleBtn(el) {
 
   }
 }
-
-
-
-
-
 
 
 

@@ -1,7 +1,12 @@
-function mailSend() {
-  window.confirm("Email sent!")
-};
 
+//email send btn
+document.querySelector('.customerEmail_send button').addEventListener('click', () => {
+  window.confirm("Email sent!");
+});
+
+
+
+//textarea 
 
 function counter(text, length) {
   var limit = length;

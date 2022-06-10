@@ -15,8 +15,6 @@ window.addEventListener("scroll", scrollProgress);
 
 
 
-
-
 // header 
 
 const showAnim = gsap.from('header', {
@@ -88,14 +86,8 @@ var swiper = new Swiper(".main_swiper", {
 var noticeswiper = new Swiper(".notice_swiper", {
   loop: true,
   speed: 4000,
-  // direction: "vertical",
-  // freeMode: true,
   slidesPerView: '3',
   spaceBetween: 0,
-  // allowTouchMove: false,
-  // touchRatio: 0,
-
-
 
   autoplay: {
     delay: 0,
@@ -106,50 +98,26 @@ var noticeswiper = new Swiper(".notice_swiper", {
 
 
 
-
-
-
-// search
-
-// $(document).ready(function () {
-//   $('.search').click(function () {
-//     $('.searchWindow').fadeIn();
-//   });
-
-//   $('.search_closeBtn').click(function () {
-//     $('.searchWindow').fadeOut();
-//   });
-
-//   $('.nav_btn_mobile').click(function () {
-//     $('.gnb').toggleClass('gnbOpen');
-//     $(this).find('button').toggleClass('navOpen');
-//   });
-
-// });
-
-
-// fade in and out 적용하기
-
-document.querySelector('.search').addEventListener('click', () => {
-  document.querySelector('.searchWindow').classList.add('searchWindow_fadeIn');
-  document.querySelector('.body').classList.add('bodyfixed');
-});
-
-
-document.querySelector('.search_closeBtn').addEventListener('click', () => {
-  document.querySelector('.searchWindow').classList.remove('searchWindow_fadeIn');
-  document.querySelector('.body').classList.remove('bodyfixed');
-});
-
-
-
-
+//mobile nav button
 document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
   document.querySelector('.gnb').classList.toggle('gnbOpen');
   document.querySelector('.nav_btn_mobile button').classList.toggle('navOpen');
   document.querySelector('.body').classList.toggle('bodyfixed');
 });
 
+
+
+// search
+
+document.querySelector('.search').addEventListener('click', () => {
+  document.querySelector('.searchWindow').classList.add('searchWindow_fadeIn');
+  document.querySelector('.body').classList.add('bodyfixed');
+});
+
+document.querySelector('.search_closeBtn').addEventListener('click', () => {
+  document.querySelector('.searchWindow').classList.remove('searchWindow_fadeIn');
+  document.querySelector('.body').classList.remove('bodyfixed');
+});
 
 
 
@@ -179,8 +147,6 @@ var swiper = new Swiper(".popular_swiper", {
     prevEl: "#popular-prev",
   },
 });
-
-
 
 
 
@@ -214,34 +180,10 @@ var swiper = new Swiper(".location_swiper", {
 
 
 
-
-// footer 
-
-// $(document).ready(function () {
-
-//   $('.footer_head').click(function () {
-//     $(this).next('.footernav_inner').slideToggle();
-//     $(this).toggleClass('footernavOpen');
-//   });
-
-//   $('.footer_nav >ul >li').click(function () {
-//     $(this).siblings().find('.footernav_inner').slideUp();
-//     $(this).siblings().find('.footer_head').removeClass('footernavOpen');
-//   });
-
-// });
-
-
-
-
-
-//footer javascript
-
+//footer
 
 let footertitle = document.querySelectorAll('.footer_head');
-
 let footerinner = document.querySelectorAll('.footernav_inner');
-
 
 
 footertitle.forEach(el => {
