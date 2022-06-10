@@ -217,6 +217,28 @@ select {
   overflow-y: hidden;
 }
 
+.cart_modal {
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(220, 218, 204, 0.9);
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+}
+
+.cart_modal p {
+  text-align: center;
+  font-family: "Zapf Humanist";
+  font-size: 24px;
+  line-height: 100px;
+}
+
+.cart_modal.modal_show {
+  display: block;
+}
+
 header {
   width: 100%;
   height: 74px;
@@ -476,33 +498,36 @@ nav ul li a {
   border: 1px solid #7b7b7b;
   padding: 10px;
   opacity: 0;
+}
+
+.suggested a.stagger_active {
   -webkit-animation: stagger-reveal 1.2s 1.2s alternate;
           animation: stagger-reveal 1.2s 1.2s alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.suggested a:nth-child(1) {
+.suggested a.stagger_active:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.suggested a:nth-child(2) {
+.suggested a.stagger_active:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.suggested a:nth-child(3) {
+.suggested a.stagger_active:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.suggested a:nth-child(4) {
+.suggested a.stagger_active:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.suggested a:nth-child(5) {
+.suggested a.stagger_active:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -929,30 +954,6 @@ nav ul li a {
   }
 }
 
-.notice {
-  width: 100%;
-}
-
-.notice_swiper {
-  height: 50px !important;
-  border-bottom: 1px solid gray;
-}
-
-.notice_swiper .swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
-}
-
-.notice_swiper .swiper-slide {
-  text-align: center;
-  line-height: 50px;
-}
-
-.notice_swiper .swiper-slide a {
-  display: block;
-  text-transform: uppercase;
-}
-
 .popular {
   padding: 140px 30px;
 }
@@ -1099,6 +1100,7 @@ nav ul li a {
   width: 30px;
   height: 30px;
   padding: 8px;
+  top: calc(50% - 40px) !important;
 }
 
 #popular-next::after {
@@ -1115,6 +1117,7 @@ nav ul li a {
   width: 30px;
   height: 30px;
   padding: 8px;
+  top: calc(50% - 40px) !important;
 }
 
 #popular-prev::after {

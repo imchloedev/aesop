@@ -76,8 +76,8 @@ var swiper = new Swiper(".related__product_swiper", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#relatedNext",
+    prevEl: "#relatedPrev",
   },
 });
 

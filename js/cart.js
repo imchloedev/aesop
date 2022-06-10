@@ -46,3 +46,12 @@ function count2(type) {
 
   resultElement2.innerText = number;
 };
+
+
+
+//check out
+document.querySelector('.cart_purchase button').addEventListener('click', () => {
+
+  window.confirm("Please sign in first.");
+  
+});

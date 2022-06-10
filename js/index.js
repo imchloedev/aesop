@@ -81,22 +81,6 @@ var swiper = new Swiper(".main_swiper", {
 
 
 
-//notice
-
-var noticeswiper = new Swiper(".notice_swiper", {
-  loop: true,
-  speed: 4000,
-  slidesPerView: '3',
-  spaceBetween: 0,
-
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-
-});
-
-
 
 //mobile nav button
 document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
@@ -112,6 +96,11 @@ document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
 document.querySelector('.search').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.add('searchWindow_fadeIn');
   document.querySelector('.body').classList.add('bodyfixed');
+
+  //a stagger reveal animation
+  document.querySelectorAll('.suggested a').forEach(el => {
+    el.classList.add('stagger_active');
+  });
 });
 
 document.querySelector('.search_closeBtn').addEventListener('click', () => {
@@ -147,6 +136,27 @@ var swiper = new Swiper(".popular_swiper", {
     prevEl: "#popular-prev",
   },
 });
+
+
+
+//add to cart button
+//added to cart modal
+
+const cartModal = document.getElementById('cart_modal');
+
+document.querySelectorAll('.cartBtn').forEach(el => {
+
+  el.addEventListener('click', function () {
+
+    cartModal.classList.add('modal_show')
+
+    setTimeout(() => {
+      cartModal.classList.remove('modal_show')
+    }, 1500);
+
+  });
+});
+
 
 
 

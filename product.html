@@ -184,6 +184,14 @@
     </div>
   </header>
 
+  <!-- modal -->
+  <div class="cart_modal" id="cart_modal">
+    <p>
+      Added to Cart!
+    </p>
+  </div>
+
+
 
   <article class="product__container" role="main">
 
@@ -224,8 +232,8 @@
           </div>
         </div>
 
-        <div class="cartBtn">
-          <button>Add to cart</button>
+        <div class="cartBtn_box">
+          <button class="cartBtn">Add to cart</button>
           <span class="product_price">$50.00</span>
         </div>
 
@@ -277,51 +285,54 @@
         <h3>Related products</h3>
       </div>
 
+      <div class="related__product_swiper_container">
+        <div class="swiper related__product_swiper">
+          <div class="swiper-wrapper">
 
-      <div class="swiper related__product_swiper">
-        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="related_product_img">
+                <img src="img/product/product8.webp" alt="">
+              </div>
 
-          <div class="swiper-slide">
-            <div class="related_product_img">
-              <img src="img/product/product8.webp" alt="">
+              <div class="product_info_box">
+                <h6>Geranium Leaf Body Balm</h6>
+                <span class="product_slide_price">$35.00</span>
+              </div>
             </div>
 
-            <div class="product_info_box">
-              <h6>Geranium Leaf Body Balm</h6>
-              <span class="product_slide_price">$35.00</span>
+            <div class="swiper-slide">
+              <div class="related_product_img">
+                <img src="img/product/product9.webp" alt="">
+              </div>
+
+              <div class="product_info_box">
+                <h6>Redemption Body Scrub</h6>
+                <span class="product_slide_price">$37.00</span>
+              </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="related_product_img">
+                <img src="img/product/product10.webp" alt="">
+              </div>
+
+              <div class="product_info_box">
+                <h6>Petitgrain Reviving Body Gel</h6>
+                <span class="product_slide_price">$43.00</span>
+              </div>
+            </div>
+
           </div>
 
-          <div class="swiper-slide">
-            <div class="related_product_img">
-              <img src="img/product/product9.webp" alt="">
-            </div>
+          <div class="swiper-pagination"></div>
 
-            <div class="product_info_box">
-              <h6>Redemption Body Scrub</h6>
-              <span class="product_slide_price">$37.00</span>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="related_product_img">
-              <img src="img/product/product10.webp" alt="">
-            </div>
-
-            <div class="product_info_box">
-              <h6>Petitgrain Reviving Body Gel</h6>
-              <span class="product_slide_price">$43.00</span>
-            </div>
-          </div>
 
         </div>
 
-        <div class="swiper-pagination"></div>
-
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div id="relatedNext" class="swiper-button-next"></div>
+        <div id="relatedPrev" class="swiper-button-prev"></div>
       </div>
+
 
     </section>
 

@@ -213,6 +213,7 @@ select {
 
 
 
+
 // scroll event
 
 .content__item {
@@ -284,6 +285,34 @@ select {
 .body.bodyfixed {
   overflow-y: hidden;
 }
+
+
+
+//modal
+
+.cart_modal {
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(220, 218, 204, 0.9);
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+
+  p {
+    text-align: center;
+    font-family: $heading_font;
+    font-size: 24px;
+    line-height: 100px;
+  }
+}
+
+
+.cart_modal.modal_show {
+  display: block;
+}
+
 
 
 
@@ -475,13 +504,11 @@ nav {
 
 
 .searchWindow {
-  // display: none;
   transition: ease-in-out 0.3s;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 30;
-  // transform: translateY(-100%);
   width: 100%;
   height: 0;
   opacity: 0;
@@ -492,8 +519,8 @@ nav {
 
 .searchWindow_fadeIn {
   // display: block;
-   height: 100vh;
-   opacity: 1;
+  height: 100vh;
+  opacity: 1;
   // transform: translateY(0);
 }
 
@@ -566,28 +593,33 @@ nav {
     border: 1px solid #7b7b7b;
     padding: 10px;
     opacity: 0;
-    animation: stagger-reveal 1.2s 1.2s alternate;
-    animation-fill-mode: forwards;
+  }
+}
 
-    &:nth-child(1) {
-      animation-delay: 0.2s;
-    }
 
-    &:nth-child(2) {
-      animation-delay: 0.4s;
-    }
 
-    &:nth-child(3) {
-      animation-delay: 0.6s;
-    }
+.suggested a.stagger_active {
+  animation: stagger-reveal 1.2s 1.2s alternate;
+  animation-fill-mode: forwards;
 
-    &:nth-child(4) {
-      animation-delay: 0.8s;
-    }
+  &:nth-child(1) {
+    animation-delay: 0.2s;
+  }
 
-    &:nth-child(5) {
-      animation-delay: 1s;
-    }
+  &:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 1s;
   }
 }
 
@@ -904,9 +936,6 @@ main {
 }
 
 
-
-
-
 #main-prev,
 #main-next {
 
@@ -1014,36 +1043,6 @@ main {
 
     }
   }
-}
-
-
-
-//notice
-
-.notice {
-  width: 100%;
-}
-
-
-.notice_swiper {
-  height: 50px !important;
-  border-bottom: 1px solid gray;
-
-  .swiper-wrapper {
-    transition-timing-function: linear !important;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    line-height: 50px;
-
-    a {
-      display: block;
-      text-transform: uppercase;
-    }
-
-  }
-
 }
 
 
@@ -1202,6 +1201,7 @@ main {
   width: 30px;
   height: 30px;
   padding: 8px;
+  top: calc(50% - 40px) !important;
 
   &::after {
     font-size: 18px;
@@ -1219,6 +1219,7 @@ main {
   width: 30px;
   height: 30px;
   padding: 8px;
+  top: calc(50% - 40px) !important;
 
   &::after {
     font-size: 18px;
@@ -2042,8 +2043,8 @@ footer {
 
 
 .footernav_inner.footernav_inner_active {
-    height: auto;
-    padding-bottom: 20px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 
