@@ -587,9 +587,16 @@ nav {
   a {
     display: inline-block;
     margin: 10px 10px 10px 0;
-    border: 1px solid #7b7b7b;
+    border: 1px solid #333;
     padding: 10px;
     opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #333;
+      color: white;
+    }
   }
 }
 

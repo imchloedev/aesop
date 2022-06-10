@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 //scroll event script
 
 function scrollProgress() {
@@ -109,10 +100,37 @@ document.querySelector('.search').addEventListener('click', () => {
 
 });
 
+
 document.querySelector('.search_closeBtn').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.remove('searchWindow_fadeIn');
   document.querySelector('.body').classList.remove('bodyfixed');
 });
+
+
+
+//suggested a > input value
+let keyword = document.querySelectorAll('.suggested a');
+let keySearch = document.querySelector('.searchBox input');
+
+keyword.forEach(el => {
+  el.addEventListener('click', function () {
+    keySearch.value = el.innerText;
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

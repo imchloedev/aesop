@@ -1,0 +1,4 @@
+{
+  "scss.completion.completePropertyWithSemicolon": true,
+  "scss.format.newlineBetweenRules": true
+}

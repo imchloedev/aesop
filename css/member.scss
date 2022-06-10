@@ -92,6 +92,14 @@ $desktop: 1200px;
   input {
     width: 14px;
     height: 14px;
+    border: 1px solid #333;
+    appearance: none;
+  }
+
+  input:checked {
+    background: url('../img/icon/checked.png') no-repeat;
+    background-position: center center;
+    background-size: 12px 12px;
   }
 
   label {

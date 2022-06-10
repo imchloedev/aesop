@@ -1,9 +1,19 @@
-.article__container {
+.news__container {
   margin-top: 74px;
   padding: 0 30px;
 }
 
-.article_title_box {
+.news_title_box {
   padding: 80px 0;
+}
+
+.news_box {
+  margin: 20px 0;
+  display: none;
+}
+
+.news_box img {
+  width: 300px;
+  display: block;
 }
 /*# sourceMappingURL=news.css.map */
