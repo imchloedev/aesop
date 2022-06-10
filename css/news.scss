@@ -1,0 +1,50 @@
+
+$body_background: #f1f0e8;
+$heading_font: 'Zapf Humanist';
+
+
+
+// window size
+
+$mobile: 1040px;
+$laptop: 1041px;
+$desktop: 1200px;
+
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
+
+
+.article__container {
+  margin-top: 74px;
+  padding: 0 30px;
+}
+
+
+.article_title_box {
+  padding: 80px 0;
+}
+
+
+
+
