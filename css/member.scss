@@ -35,72 +35,86 @@ $desktop: 1200px;
 // start
 
 
-.loginWrapper {
+.member__container {
+
+  @include mobile {
+    padding: 40px 30px 80px 30px;
+    max-width: 600px;
+    margin: 74px auto 0 auto;
+
+  }
+}
+
+
+
+.member__wrapper {
+
+  @include laptop {
+    display: flex;
+  }
+}
+
+
+.memberContent {
+
+  @include laptop {
+    margin-top: 74px;
+    width: 50%;
+  }
+}
+
+
+
+.memberWrapper {
+
   h2 {
     margin-bottom: 40px;
   }
+
+  @include laptop {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 30px 140px 30px;
+  }
 }
 
 
-.login_email {
+.info_input {
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border: 1px solid #333;
+  background: none;
+  padding: 0 20px;
+
+  &:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+.info_input_label {
+  font-weight: 600;
+  color: #444;
+}
+
+
+
+.member_email,
+.member_password {
   width: 100%;
   padding-bottom: 20px;
-
-  label {
-    font-weight: 700;
-    color: #444;
-  }
-
-  input {
-    margin-top: 6px;
-    display: block;
-    width: 100%;
-    height: 50px;
-    border: none;
-    border: 1px solid #333;
-    background: none;
-    padding: 0 20px;
-  }
 }
 
 
-.login_password {
-  width: 100%;
-  padding-bottom: 20px;
 
-  label {
-    font-weight: 700;
-    color: #444;
-  }
-
-  input {
-    margin-top: 6px;
-    display: block;
-    width: 100%;
-    height: 50px;
-    border: none;
-    border: 1px solid #333;
-    background: none;
-    padding: 0 20px;
-  }
-}
-
-
-.login_remember {
+.login_remember, .terms_privacy, .subscribe_letter {
   display: flex;
-
-  input {
-    width: 14px;
-    height: 14px;
-    border: 1px solid #333;
-    appearance: none;
-  }
-
-  input:checked {
-    background: url('../img/icon/checked.png') no-repeat;
-    background-position: center center;
-    background-size: 12px 12px;
-  }
 
   label {
     margin-left: 10px;
@@ -108,6 +122,23 @@ $desktop: 1200px;
   }
 
 }
+
+
+.member_checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #333;
+  appearance: none;
+}
+
+.member_checkbox:checked {
+  background: url('../img/icon/checked.png') no-repeat;
+  background-position: center center;
+  background-size: 12px 12px;
+}
+
+
+
 
 
 .login_loginBtn {
@@ -175,44 +206,102 @@ $desktop: 1200px;
 
 
 
+//create one
+
+.create_account__wrapper {
+  padding-top: 140px;
+}
+
+
+.create_firstname,
+.create_lastname {
+  padding-bottom: 20px;
+}
+
+
+.create_birth {
+  padding-bottom: 20px;
+
+}
+
+
+.create_birth_box {
+  display: flex;
+  border: 1px solid #333;
+  margin-top: 6px;
+
+  input {
+    border: none;
+    margin: 0;
+    text-align: center;
+
+    &:focus {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  span {
+    line-height: 50px;
+    color: #999;
+  }
+}
+
+
+.create_birth_box.focus_active {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.create_phonenumber {
+  padding-bottom: 40px;
+}
+
+
+
+.subscribe_letter  {
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+
+
+
+.terms_privacy {
+  padding-bottom: 20px;
+  font-size: 14px;
+  
+  span {
+    text-transform: capitalize;
+    color: #111;
+    font-weight: 600;
+  }
+}
+
+
+.signup_button {
+
+  button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+
+
 .login_main_img {
   display: none;
-}
 
-
-@include mobile {
-
-  .member__container {
-    padding: 80px 30px;
-    max-width: 600px;
-    margin: 74px auto 0 auto;
-  }
-}
-
-
-@include laptop {
-
-  .member__wrapper {
-    display: flex;
-  }
-
-  .loginContent {
-    margin-top: 74px;
-    width: 50%;
-  }
-
-
-  .loginWrapper {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 140px 30px;
-  }
-
-
-  .login_main_img {
+  @include laptop {
     display: block;
     width: 50%;
     height: 100vh;
@@ -225,4 +314,5 @@ $desktop: 1200px;
       object-fit: cover;
     }
   }
+
 }

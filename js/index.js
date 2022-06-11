@@ -3,7 +3,7 @@
 function scrollProgress() {
   let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight;
 
-  //forEach()
+  //forEach
   document.querySelectorAll(".content__item").forEach(item => {
     scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
   });

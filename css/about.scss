@@ -45,11 +45,11 @@ $desktop: 1200px;
 
 
 .about_title {
-  height: 430px;
+  // height: 430px;
   // background: url('../img/bg/bg33.jpeg') no-repeat;
   // background-position: right center;
   // background-size: cover;
-  background-color: #c1cac6;
+  // background-color: #c1cac6;
 
  
 }
@@ -57,13 +57,13 @@ $desktop: 1200px;
 
 .about_title_copy {
   height: 100%;
-  padding: 140px 30px 0 30px;
+  padding: 80px 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   // color: #fffef2;
     color: #383838;
-  text-align: center;
+  // text-align: center;
 
   h1 {
     margin-bottom: 10px;
@@ -72,7 +72,7 @@ $desktop: 1200px;
 
   p {
     width: 70%;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   @include desktop {
@@ -83,7 +83,7 @@ $desktop: 1200px;
 
 
 .about_content_container {
-  padding: 140px 30px;
+  padding: 0 30px 140px 30px;
 
   @include desktop {
     width: 1200px;
@@ -167,11 +167,42 @@ $desktop: 1200px;
   background-color: #e9e8de;
 
   h3 {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     line-height: normal;
         color: #383838;
   }
 
+
+  button {
+    width: 140px;
+    height: 50px;
+    border: 1px solid #333;
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #333;
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+  
 
   @include mobile {
     padding: 140px 40px;

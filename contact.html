@@ -35,7 +35,7 @@
 </head>
 
 
-<body>
+<body class="body">
 
 
   <header class="header">
@@ -111,7 +111,7 @@
                   </li>
 
                   <li>
-                    <a href="#">Articles</a>
+                    <a href="news.html">Read</a>
                   </li>
 
 
@@ -140,7 +140,7 @@
 
               <div class="searchBox">
                 <form>
-                  <input type="text" name="searchBar" id="search" placeholder="Search" required autofocus>
+                  <input type="text" name="searchBar" id="search" placeholder="Search" required autofocus value="">
                   <button type="submit">Submit</button>
                 </form>
               </div>
@@ -155,9 +155,7 @@
               </div>
             </div>
           </div>
-          <!-- suggested key word 입력 시 input 으로 값이 이동 -->
-
-          <!-- menu hamburger -->
+          
           <div class="nav_btn_mobile">
             <button>
               <span class="navbtn_line1"></span>
@@ -171,6 +169,7 @@
       </div>
     </div>
   </header>
+
 
 
 
@@ -194,7 +193,7 @@
 
       <div class="contact_content_box">
         <form>
-          <div class="customerEmail_iput">
+          <div class="customer_firstname customer_input">
             <input type="text" name="contactus_firstname" value="" maxlength="40" placeholder="First Name" required>
             <label for="contactus_firstname">
               <span>
@@ -203,7 +202,7 @@
             </label>
           </div>
 
-          <div class="customerEmail_iput">
+          <div class="customer_lastname customer_input">
             <input id="contactus_lastname" type="text" name="contactus_lastname" value="" maxlength="40"
               placeholder="Last Name" required>
             <label for="contactus_lastname">
@@ -213,7 +212,7 @@
             </label>
           </div>
 
-          <div class="customerEmail_iput">
+          <div class="customer_email customer_input">
             <input id="contactus_email" type="text" name="contactus_email" value="" maxlength="50" autocapitalize="off"
               autocomplete="email" autocorrect="off" placeholder="Email Address" required>
             <label for="contactus_email">
@@ -223,7 +222,7 @@
             </label>
           </div>
 
-          <div class="customerEmail_iput">
+          <div class="customer_ordernum customer_input">
             <input class="input-text float-input" id="contactus_orderno" type="text" name="contactus_orderno" value=""
               maxlength="50" placeholder="Order # (Optional)">
             <label for="contactus_orderno">

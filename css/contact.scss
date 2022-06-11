@@ -103,7 +103,7 @@ $desktop: 1200px;
 }
 
 
-.customerEmail_iput {
+.customer_input {
   margin-bottom: 20px;
   height: 50px;
 
@@ -118,6 +118,10 @@ $desktop: 1200px;
 
     &::placeholder {
       color: #333;
+    }
+
+    &:focus {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -144,10 +148,17 @@ $desktop: 1200px;
     &::placeholder {
       color: #333;
     }
+
+
+    &:focus {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
   }
 
   .form-caption {
-    font-size: 14px
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
   }
 
 }

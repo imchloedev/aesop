@@ -69,12 +69,12 @@
   }
 }
 
-.customerEmail_iput {
+.customer_input {
   margin-bottom: 20px;
   height: 50px;
 }
 
-.customerEmail_iput input {
+.customer_input input {
   display: block;
   width: 100%;
   height: 50px;
@@ -83,23 +83,28 @@
   padding: 0 20px;
 }
 
-.customerEmail_iput input::-webkit-input-placeholder {
+.customer_input input::-webkit-input-placeholder {
   color: #333;
 }
 
-.customerEmail_iput input:-ms-input-placeholder {
+.customer_input input:-ms-input-placeholder {
   color: #333;
 }
 
-.customerEmail_iput input::-ms-input-placeholder {
+.customer_input input::-ms-input-placeholder {
   color: #333;
 }
 
-.customerEmail_iput input::placeholder {
+.customer_input input::placeholder {
   color: #333;
 }
 
-.customerEmail_iput label {
+.customer_input input:focus {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.customer_input label {
   visibility: hidden;
 }
 
@@ -132,7 +137,14 @@
   color: #333;
 }
 
+.customerEmail_message textarea:focus {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .customerEmail_message .form-caption {
+  display: block;
+  margin-top: 5px;
   font-size: 14px;
 }
 

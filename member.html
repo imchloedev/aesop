@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
   <script defer src="js/index.js"></script>
@@ -123,7 +123,7 @@
                   </li>
 
                   <li>
-                    <a href="#">Articles</a>
+                    <a href="news.html">Read</a>
                   </li>
 
 
@@ -190,35 +190,111 @@
 
     <div class="member__wrapper">
 
-      <section class="loginContent">
-        <div class="loginWrapper">
-          <h2>Welcome Back</h2>
+      <section class="memberContent">
+        <div class="memberWrapper">
 
-          <form class="loginInner">
-            <div class="login_email">
-              <label for="email">E-mail</label>
-              <input type="text" name="email" placeholder="Email *" required>
-            </div>
+          <div class="login__wrapper">
+            
+            <h2>Welcome Back</h2>
 
-            <div class="login_password">
-              <label for="password">Password</label>
-              <input type="text" name="password" placeholder="Password *" required>
-            </div>
+            <form class="loginInner">
+              <div class="login_email member_email">
+                <label for="email" class="info_input_label">E-mail</label>
+                <input type="text" name="email" class="info_input" placeholder="Email *" required>
+              </div>
 
-            <div class="login_remember">
-              <input type="checkbox" name="remember">
-              <label for="remember">Remember me</label>
-            </div>
+              <div class="login_password member_password">
+                <label for="password" class="info_input_label">Password</label>
+                <input type="text" name="password" class="info_input" placeholder="Password *" required>
+              </div>
 
-            <div class="login_loginBtn">
-              <button type="submit">LOG IN</button>
-              <button type="text"><span></span> Sign in with Google</button>
-            </div>
+              <div class="login_remember">
+                <input type="checkbox" name="remember" class="member_checkbox">
+                <label for="remember">Remember me</label>
+              </div>
 
-            <div class="login_forgotLink">
-              <a href="javascript:void(0)">Forgot Password?</a>
-            </div>
-          </form>
+              <div class="login_loginBtn">
+                <button type="submit">Sign in</button>
+                <button type="text"><span></span> Sign in with Google</button>
+              </div>
+
+              <div class="login_forgotLink">
+                <a href="javascript:void(0)">Forgot Password?</a>
+              </div>
+            </form>
+          </div>
+
+
+          <div class="create_account__wrapper">
+
+            <h2>Sign up</h2>
+
+            <form class="createInner">
+
+              <div class="create_email member_email">
+                <label for="email" class="info_input_label">E-mail</label>
+                <input type="text" name="email" class="info_input" placeholder="Email *" required>
+              </div>
+
+              <div class="create_password member_password">
+                <label for="password" class="info_input_label">Create password</label>
+                <input type="text" name="password"  class="info_input" placeholder="Password *" required>
+              </div>
+
+
+              <div class="create_firstname">
+                <label for="create_firstname" class="info_input_label">First name</label>
+                <input type="text" name="create_firstname" value="" class="info_input" maxlength="40" placeholder="First Name" required>
+
+              </div>
+    
+              <div class="create_lastname">
+                <label for="lastname" class="info_input_label">Last name</label>
+                <input type="text" name="create_lastname" value="" class="info_input" maxlength="40"
+                  placeholder="Last Name" required>
+              </div>
+
+              <div class="create_birth">
+                <label for="date_birth" class="info_input_label">Date of birth</label>
+
+                <div class="create_birth_box">
+                  <input type="text" placeholder="MM" class="info_input birth_info" maxlength="2">
+                  <span>/</span>
+                  <input type="text" placeholder="DD" class="info_input birth_info" maxlength="2">
+                  <span>/</span>
+                  <input type="text" placeholder="YYYY" class="info_input birth_info" maxlength="4"> 
+                </div>
+              </div>
+
+
+              <div class="create_phonenumber">
+                <label for="phonenumber" class="info_input_label">Phone number</label>
+                <input type="text" class="info_input" placeholder="Phone number">
+              </div>
+
+              <div class="subscribe_letter">
+                <input type="checkbox" name="subscribe_letter" class="member_checkbox">
+                <label for="subscribe_letter">Subscribe to letter</label>
+
+              </div>
+
+              
+              <div class="terms_privacy">
+                <input type="checkbox" name="terms_privacy" class="member_checkbox">
+                <label for="terms_privacy">I agree all the <span>terms</span>, <span>privacy</span> and <span>fees</span></label>
+              </div>
+
+              <div class="signup_button">
+                <button type="submit">Become a member</button>
+              </div>
+
+            </form>
+
+          </div>
+
+
+
+
         </div>
       </section>
 
