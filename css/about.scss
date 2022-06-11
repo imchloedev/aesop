@@ -65,9 +65,8 @@ $desktop: 1200px;
     color: #383838;
   // text-align: center;
 
-  h1 {
+  h2 {
     margin-bottom: 10px;
-    font-size: 42px;
   }
 
   p {
@@ -165,6 +164,11 @@ $desktop: 1200px;
 
 .about_img_copy {
   background-color: #e9e8de;
+
+
+  span {
+    color: #777;
+  }
 
   h3 {
     margin-top: 10px;

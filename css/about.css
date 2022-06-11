@@ -18,9 +18,8 @@
   color: #383838;
 }
 
-.about_title_copy h1 {
+.about_title_copy h2 {
   margin-bottom: 10px;
-  font-size: 42px;
 }
 
 .about_title_copy p {
@@ -97,6 +96,10 @@
 
 .about_img_copy {
   background-color: #e9e8de;
+}
+
+.about_img_copy span {
+  color: #777;
 }
 
 .about_img_copy h3 {

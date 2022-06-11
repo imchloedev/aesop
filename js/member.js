@@ -1,8 +1,5 @@
 let birth = document.querySelectorAll('.birth_info');
 
-
-
-
 birth.forEach(el => {
   
   el.addEventListener('focus', function () {
