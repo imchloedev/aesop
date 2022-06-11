@@ -82,8 +82,13 @@ $desktop: 1200px;
 .news_box {
   margin: 20px 0;
   display: none;
-
 }
+
+
+.news_box:nth-child(-n+6) {
+  display: block;
+}
+
 
 
 .news_img_box {

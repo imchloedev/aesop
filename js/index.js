@@ -122,18 +122,6 @@ keyword.forEach(el => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // popular
 
 var swiper = new Swiper(".popular_swiper", {
