@@ -1,3 +1,6 @@
+'use strict';
+
+
 //scroll event script
 
 function scrollProgress() {
@@ -39,6 +42,7 @@ window.onscroll = function sticky() {
     nav[0].classList.remove('headerTop');
   }
 };
+
 
 
 
@@ -165,6 +169,7 @@ document.querySelectorAll('.cartBtn').forEach(el => {
     setTimeout(() => {
       cartModal.classList.remove('modal_show')
     }, 1500);
+    //1.5s
 
   });
 });
