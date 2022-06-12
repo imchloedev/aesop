@@ -28,9 +28,8 @@
   text-align: center;
 }
 
-.question_title h1 {
+.question_title h2 {
   margin: 0px 0 14px 0;
-  font-size: 42px;
 }
 
 @media (min-width: 1200px) {

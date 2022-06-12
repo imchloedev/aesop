@@ -57,9 +57,9 @@ $desktop: 1200px;
   color: #fffef2;
   text-align: center;
 
-  h1 {
+  h2 {
     margin: 0px 0 14px 0;
-    font-size: 42px;
+    // font-size: 42px;
   }
 
   @include desktop {

@@ -39,19 +39,46 @@ $desktop: 1200px;
 
 // start
 
+
+.about_cotent.content__item {
+  transform: translateY(100px);
+  transition: 0.8s;
+}
+
+
+.about_cotent.content__item.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+
+
 .about__container {
   margin-top: 74px;
 }
 
 
 .about_title {
-  // height: 430px;
-  // background: url('../img/bg/bg33.jpeg') no-repeat;
-  // background-position: right center;
-  // background-size: cover;
+  margin-bottom: 140px;
+  height: 430px;
+  background: url('../img/bg/bg18.jpg') no-repeat;
+  background-position: right center;
+  background-size: cover;
   // background-color: #c1cac6;
+  position: relative;
+  z-index: 1;
 
- 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
 }
 
 
@@ -60,10 +87,11 @@ $desktop: 1200px;
   padding: 80px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  // color: #fffef2;
-    color: #383838;
-  // text-align: center;
+  justify-content: center;
+  color: #fffef2;
+  text-align: center;
+  position: static;
+  z-index: 3;
 
   h2 {
     margin-bottom: 10px;
@@ -71,7 +99,7 @@ $desktop: 1200px;
 
   p {
     width: 70%;
-    // margin: 0 auto;
+    margin: 0 auto;
   }
 
   @include desktop {
@@ -93,6 +121,7 @@ $desktop: 1200px;
 
 
 .about_cotent {
+  margin-bottom: 140px;
 
   @include laptop {
     display: flex;
@@ -105,7 +134,7 @@ $desktop: 1200px;
   @include laptop {
 
     .about_img_copy {
-      padding: 40px;
+      padding-left: 40px;
     }
   }
 }
@@ -114,32 +143,29 @@ $desktop: 1200px;
 .about_cotent:nth-child(2) {
 
   @include mobile {
-     .about_img_copy {
-    
-    }
+    .about_img_copy {}
   }
 
   @include laptop {
     flex-direction: row-reverse;
 
     .about_img_copy {
-      padding: 40px;
+      padding-right: 40px;
     }
   }
 }
 
 .about_cotent:nth-child(3) {
-  
-   @include mobile {
-     .about_img_copy {
-  
-    }
+
+  @include mobile {
+    .about_img_copy {}
   }
 
   @include laptop {
 
     .about_img_copy {
-      padding: 40px;
+      // padding: 0 40px;
+      padding-left: 40px;
     }
   }
 }
@@ -148,11 +174,11 @@ $desktop: 1200px;
 
 .about_img_box {
   width: 100%;
-  height: 480px;
+  height: 400px;
 
   img {
     width: 100%;
-    height: 480px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -163,7 +189,7 @@ $desktop: 1200px;
 
 
 .about_img_copy {
-  background-color: #e9e8de;
+  // background-color: #e9e8de;
 
 
   span {
@@ -174,7 +200,7 @@ $desktop: 1200px;
     margin-top: 10px;
     margin-bottom: 40px;
     line-height: normal;
-        color: #383838;
+    color: #383838;
   }
 
 
@@ -206,10 +232,10 @@ $desktop: 1200px;
       color: white;
     }
   }
-  
+
 
   @include mobile {
-    padding: 140px 40px;
+    padding-top: 40px;
   }
 
   @include laptop {
@@ -224,6 +250,7 @@ $desktop: 1200px;
 
 .about_store_full {
   display: none;
+
   img {
     width: 100%;
   }
@@ -231,7 +258,7 @@ $desktop: 1200px;
 
 
 .about_quote {
-  padding: 220px 0 140px 0;
+  padding: 140px 0;
   text-align: center;
 
   p {
