@@ -44,21 +44,6 @@ tabTitle.forEach((element, index) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //tab content
 
 

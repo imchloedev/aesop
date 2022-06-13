@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Open Sans', sans-serif;
   src: url("../font/OpenSans/OpenSans-Regular.ttf") format("truetype");
@@ -389,10 +388,6 @@ nav ul li a {
   text-transform: uppercase;
   cursor: pointer;
   display: block;
-}
-
-nav ul li.nav_active a {
-  color: red;
 }
 
 @media (max-width: 1040px) {
@@ -1060,7 +1055,6 @@ nav ul li.nav_active a {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  /* 라인수 */
   -webkit-box-orient: vertical;
   word-wrap: break-word;
 }

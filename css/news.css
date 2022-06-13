@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .news__container {
   margin-top: 74px;
 }
@@ -101,7 +100,6 @@
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  /* 라인수 */
   -webkit-box-orient: vertical;
   word-wrap: break-word;
 }

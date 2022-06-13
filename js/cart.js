@@ -1,3 +1,34 @@
+//close button 
+
+let deleteBtn = document.querySelectorAll('.cart_deleteBtn');
+let cartContent = document.querySelectorAll('.cart_summary');
+
+let currentItems = cartContent.length;
+
+deleteBtn.forEach((el, index) => {
+  el.addEventListener('click', function () {
+
+    cartContent[index].style.display = "none";
+    currentItems -= 1;
+
+    if (currentItems <= 0) {
+      document.querySelector('.cart_empty_alert').style.display = "block";
+      document.querySelector('.cart_summary_price').style.visibility = "hidden";
+      document.querySelector('.cart_purchase').style.visibility = "hidden";
+    }
+
+    console.log(currentItems);
+
+
+
+
+
+  });
+});
+
+
+
+
 // quantity
 
 function count(type) {
