@@ -1,3 +1,5 @@
+'use strict';
+
 //close button 
 
 let deleteBtn = document.querySelectorAll('.cart_deleteBtn');
@@ -13,19 +15,14 @@ deleteBtn.forEach((el, index) => {
 
     if (currentItems <= 0) {
       document.querySelector('.cart_empty_alert').style.display = "block";
-      document.querySelector('.cart_summary_price').style.visibility = "hidden";
-      document.querySelector('.cart_purchase').style.visibility = "hidden";
+      document.querySelector('.cart_summary_price').style.display = "none";
+      document.querySelector('.cart_purchase').style.display = "none";
+      document.querySelector('.cart_list').classList.add('cart_empty');
     }
 
     console.log(currentItems);
-
-
-
-
-
   });
 });
-
 
 
 

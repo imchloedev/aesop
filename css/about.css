@@ -3,6 +3,7 @@
           transform: translateY(100px);
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  opacity: 1;
 }
 
 .about_cotent.content__item.show {
