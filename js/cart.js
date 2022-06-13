@@ -26,6 +26,57 @@ deleteBtn.forEach((el, index) => {
 
 
 
+//cart price calculation
+
+let cartPrices = document.querySelectorAll('.cart_product_price');
+let shipping = document.querySelector('.cart_shipping');
+let subtotal = document.querySelector('.cart_subtotal');
+let total = document.querySelector('.cart_total');
+
+
+cartPrices.forEach((el, index) => {
+
+  // Number(el[index].innerText);
+
+
+  // subtotal.innerHTML = sum;
+
+  let sum = 0;
+
+
+  for (i=0; )
+
+
+
+  sum += Number(el.innerText);
+
+
+  console.log(sum);
+
+});
+
+
+
+
+
+// subtotal.innerText =
+
+
+// let sum = 0;
+
+// for (let i = 0; i < cartPrices.length; i++) {
+//     sum += cartPrices[i];
+// }
+// console.log(sum);
+
+
+
+
+
+
+
+
+
 // quantity
 
 function count(type) {
