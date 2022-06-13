@@ -2,13 +2,10 @@ $body_background: #f1f0e8;
 $heading_font: 'Zapf Humanist';
 
 
-
 // window size
-
 $mobile: 1040px;
 $laptop: 1041px;
 $desktop: 1200px;
-
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
@@ -16,13 +13,11 @@ $desktop: 1200px;
   }
 }
 
-
 @mixin laptop {
   @media (min-width: #{$laptop}) {
     @content;
   }
 }
-
 
 @mixin desktop {
   @media (min-width: #{$desktop}) {
@@ -31,14 +26,7 @@ $desktop: 1200px;
 }
 
 
-
-
-
-
-
-
 // start
-
 
 .about_cotent.content__item {
   transform: translateY(100px);
@@ -52,8 +40,6 @@ $desktop: 1200px;
 }
 
 
-
-
 .about__container {
   margin-top: 74px;
 }
@@ -65,7 +51,6 @@ $desktop: 1200px;
   background: url('../img/bg/bg18.jpg') no-repeat;
   background-position: right center;
   background-size: cover;
-  // background-color: #c1cac6;
   position: relative;
   z-index: 1;
 
@@ -116,7 +101,6 @@ $desktop: 1200px;
     width: 1200px;
     margin: 0 auto;
   }
-
 }
 
 
@@ -142,10 +126,6 @@ $desktop: 1200px;
 
 .about_cotent:nth-child(2) {
 
-  @include mobile {
-    .about_img_copy {}
-  }
-
   @include laptop {
     flex-direction: row-reverse;
 
@@ -157,19 +137,13 @@ $desktop: 1200px;
 
 .about_cotent:nth-child(3) {
 
-  @include mobile {
-    .about_img_copy {}
-  }
-
   @include laptop {
 
     .about_img_copy {
-      // padding: 0 40px;
       padding-left: 40px;
     }
   }
 }
-
 
 
 .about_img_box {
@@ -189,8 +163,6 @@ $desktop: 1200px;
 
 
 .about_img_copy {
-  // background-color: #e9e8de;
-
 
   span {
     color: #777;
@@ -233,7 +205,6 @@ $desktop: 1200px;
     }
   }
 
-
   @include mobile {
     padding-top: 40px;
   }
@@ -245,7 +216,6 @@ $desktop: 1200px;
     justify-content: center;
   }
 }
-
 
 
 .about_store_full {

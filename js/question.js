@@ -1,6 +1,5 @@
 // tab 
 
-
 var swiper = new Swiper(".tab_title", {
   slidesPerView: 2.5,
   spaceBetween: 10,
@@ -21,10 +20,8 @@ var swiper = new Swiper(".tab_title", {
 
 //tab menu
 
-
 let tabTitle = document.querySelectorAll('.question__list');
 let tabCont = document.querySelectorAll('.tab_cont > div');
-
 
 tabTitle.forEach((element, index) => {
   element.addEventListener('click', function () {

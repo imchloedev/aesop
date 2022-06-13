@@ -31,8 +31,6 @@ $desktop: 1200px;
 }
 
 
-
-
 .question__cotainer {
   margin-top: 74px;
 }
@@ -59,14 +57,12 @@ $desktop: 1200px;
 
   h2 {
     margin: 0px 0 14px 0;
-    // font-size: 42px;
   }
 
   @include desktop {
     width: 1200px;
     margin: 0 auto;
   }
-
 }
 
 
@@ -212,6 +208,7 @@ $desktop: 1200px;
 .returns_answer {
   display: none;
 }
+
 
 .web_answer {
   display: none;

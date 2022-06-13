@@ -16,22 +16,17 @@ $desktop: 1200px;
   }
 }
 
-
 @mixin laptop {
   @media (min-width: #{$laptop}) {
     @content;
   }
 }
 
-
 @mixin desktop {
   @media (min-width: #{$desktop}) {
     @content;
   }
 }
-
-
-
 
 
 
@@ -57,7 +52,6 @@ $desktop: 1200px;
   background-size: 14px 14px;
   padding-left: 20px;
   cursor: pointer;
-
 
   &::before {
     content: '';
@@ -128,7 +122,6 @@ $desktop: 1200px;
       color: #666;
     }
   }
-
 }
 
 
@@ -141,7 +134,6 @@ $desktop: 1200px;
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 

@@ -2,10 +2,8 @@
 
 function count(type) {
   const resultElement = document.getElementById('result');
-
   let number = resultElement.innerText;
 
-  // 더하기/빼기
   if (type === 'plus') {
     if (number !== 0) {
       number = parseInt(number) + 1;
@@ -27,14 +25,12 @@ function count(type) {
 //size toggle button 
 
 let option = document.querySelectorAll('.size_option');
-
 option.forEach( el => {
   el.addEventListener('click', toggleBtn)
 });
 
 
 function toggleBtn(el) {
-
   let target = el.currentTarget;
 
   if (target.classList.contains('sizeSelected')) {

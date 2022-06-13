@@ -22,15 +22,12 @@ function count(type) {
 
 
 
-
 // quantity2
 
 function count2(type) {
 
   const resultElement2 = document.getElementById('result2');
-
   let number = resultElement2.innerText;
-
 
   if (type === 'plus') {
     if (number !== 0) {
@@ -51,7 +48,5 @@ function count2(type) {
 
 //check out
 document.querySelector('.cart_purchase button').addEventListener('click', () => {
-
   window.confirm("Please sign in first.");
-  
 });

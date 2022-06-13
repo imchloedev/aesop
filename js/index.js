@@ -2,7 +2,6 @@
 
 
 //scroll event script
-
 function scrollProgress() {
   let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight;
 
@@ -10,7 +9,6 @@ function scrollProgress() {
   document.querySelectorAll(".content__item").forEach(item => {
     scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
   });
-
 };
 
 window.addEventListener("scroll", scrollProgress);
@@ -45,7 +43,6 @@ window.onscroll = function sticky() {
 
 
 
-
 //main swiper
 
 var swiper = new Swiper(".main_swiper", {
@@ -58,7 +55,6 @@ var swiper = new Swiper(".main_swiper", {
     delay: 3000,
     disableOnInteraction: false,
   },
-
 
   pagination: {
     el: ".swiper-pagination",
@@ -77,7 +73,6 @@ var swiper = new Swiper(".main_swiper", {
 
 
 
-
 //mobile nav button
 document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
   document.querySelector('.gnb').classList.toggle('gnbOpen');
@@ -88,7 +83,6 @@ document.querySelector('.nav_btn_mobile').addEventListener('click', () => {
 
 
 // search
-
 document.querySelector('.search').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.add('searchWindow_fadeIn');
   document.querySelector('.body').classList.add('bodyfixed');
@@ -101,9 +95,7 @@ document.querySelector('.search').addEventListener('click', () => {
   //when gnb opened, open searh -> reset gnb, navbtn 
   document.querySelector('.gnb').classList.remove('gnbOpen');
   document.querySelector('.nav_btn_mobile button').classList.remove('navOpen');
-
 });
-
 
 document.querySelector('.search_closeBtn').addEventListener('click', () => {
   document.querySelector('.searchWindow').classList.remove('searchWindow_fadeIn');
@@ -169,8 +161,6 @@ document.querySelectorAll('.cartBtn').forEach(el => {
     setTimeout(() => {
       cartModal.classList.remove('modal_show')
     }, 1500);
-    //1.5s
-
   });
 });
 
@@ -216,7 +206,6 @@ let footerinner = document.querySelectorAll('.footernav_inner');
 footertitle.forEach(el => {
   el.addEventListener('click', toggleAccordion);
 });
-
 
 function toggleAccordion(el) {
 

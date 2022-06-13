@@ -16,13 +16,11 @@ $desktop: 1200px;
   }
 }
 
-
 @mixin laptop {
   @media (min-width: #{$laptop}) {
     @content;
   }
 }
-
 
 @mixin desktop {
   @media (min-width: #{$desktop}) {
@@ -34,17 +32,14 @@ $desktop: 1200px;
 
 // start
 
-
 .member__container {
 
   @include mobile {
     padding: 40px 30px 80px 30px;
     max-width: 600px;
     margin: 74px auto 0 auto;
-
   }
 }
-
 
 
 .member__wrapper {
@@ -62,7 +57,6 @@ $desktop: 1200px;
     width: 50%;
   }
 }
-
 
 
 .memberWrapper {
@@ -104,13 +98,11 @@ $desktop: 1200px;
 }
 
 
-
 .member_email,
 .member_password {
   width: 100%;
   padding-bottom: 20px;
 }
-
 
 
 .login_remember, .terms_privacy, .subscribe_letter {
@@ -120,7 +112,6 @@ $desktop: 1200px;
     margin-left: 10px;
     line-height: 14px;
   }
-
 }
 
 
@@ -131,14 +122,12 @@ $desktop: 1200px;
   appearance: none;
 }
 
+
 .member_checkbox:checked {
   background: url('../img/icon/checked.png') no-repeat;
   background-position: center center;
   background-size: 12px 12px;
 }
-
-
-
 
 
 .login_loginBtn {
@@ -175,7 +164,6 @@ $desktop: 1200px;
       }
     }
   }
-
 }
 
 
@@ -207,7 +195,6 @@ $desktop: 1200px;
 
 
 //create one
-
 .create_account__wrapper {
   padding-top: 140px;
 }
@@ -221,7 +208,6 @@ $desktop: 1200px;
 
 .create_birth {
   padding-bottom: 20px;
-
 }
 
 
@@ -252,19 +238,15 @@ $desktop: 1200px;
 }
 
 
-
 .create_phonenumber {
   padding-bottom: 40px;
 }
-
 
 
 .subscribe_letter  {
   padding-bottom: 15px;
   font-size: 14px;
 }
-
-
 
 
 .terms_privacy {
@@ -297,7 +279,6 @@ $desktop: 1200px;
 }
 
 
-
 .login_main_img {
   display: none;
 
@@ -314,5 +295,4 @@ $desktop: 1200px;
       object-fit: cover;
     }
   }
-
 }
