@@ -1,5 +1,3 @@
-
-
 //load more button
 
 const loadmore = document.querySelector('.loadBtn');
@@ -24,5 +22,20 @@ loadmore.addEventListener('click', (e) => {
   // Load more button will be hidden after list fully loaded
   if (currentItems >= elementList.length) {
     event.target.style.display = 'none';
+    document.querySelector('.load_end').style.display = "block";
   }
+});
+
+
+let topBtn = document.querySelector('.load_endBtn');
+
+topBtn.addEventListener('click', function () {
+
+  gsap.to(window, {
+    duration: 0.5,
+    scrollTo: {
+      y: 0,
+      x: 0,
+    }
+  });
 });

@@ -111,6 +111,9 @@ $desktop: 1200px;
 .news_content_copy {
   position: relative;
   margin-bottom: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
 
   span {
     font-size: 14px;
@@ -118,7 +121,6 @@ $desktop: 1200px;
   }
 
   h4 {
-    // border-bottom: 1px solid gray;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.8rem;
@@ -132,9 +134,16 @@ $desktop: 1200px;
   }
 
   @include mobile {
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
     p {
+      border-top: 1px solid rgb(179, 179, 179);
+      padding-top: 20px;
       line-height: 1.3rem;
-      height: 3.9rem;
+      height: calc(3.9rem + 20px);
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -166,7 +175,7 @@ $desktop: 1200px;
   button {
     display: block;
     margin: 0 auto;
-    width: 360px;
+    width: 240px;
     height: 50px;
     border: 1px solid #333;
     position: relative;
@@ -193,7 +202,39 @@ $desktop: 1200px;
     }
 
     @include mobile {
-      width: 280px;
+      width: 180px;
+    }
+  }
+}
+
+
+.load_end {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+
+  p {
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: #333;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 }

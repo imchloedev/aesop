@@ -27,6 +27,7 @@
 
 $body_background: #f1f0e8;
 $heading_font: 'Zapf Humanist';
+$border_color: #555;
 
 
 // window size
@@ -314,7 +315,7 @@ header {
   z-index: 20;
 
   @include laptop {
-    border-bottom: 1px solid #414141;
+    border-bottom: 1px solid $border_color;
     background-color: $body_background;
   }
 }
@@ -325,7 +326,7 @@ header {
   @include mobile {
     top: 0;
     background-color: $body_background !important;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $border_color;
   }
 }
 
@@ -534,7 +535,7 @@ nav {
 
   form {
     display: flex;
-    border: 1px solid #333;
+    border: 1px solid $border_color;
   }
 
   input {
@@ -570,7 +571,7 @@ nav {
   a {
     display: inline-block;
     margin: 10px 10px 10px 0;
-    border: 1px solid #333;
+    border: 1px solid $border_color;
     padding: 10px;
     opacity: 0;
     cursor: pointer;
@@ -702,29 +703,13 @@ nav {
 }
 
 
-.cartadded.cartnew {
-
-  &::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 0;
-    right: -10px;
-    border-radius: 50%;
-    background-color: rgb(181, 74, 74);
-  }
-}
-
-
-
 
 // main
 main {
 
   @include laptop {
     margin-top: 74px;
-    border-bottom: 1px solid #414141;
+    border-bottom: 1px solid $border_color;
   }
 }
 
@@ -964,32 +949,12 @@ main {
 }
 
 
+
 #main-pagination {
-  height: 2px;
-
-  @include mobile {
-    width: 50% !important;
-    top: auto;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  @include laptop {
-    width: 84px !important;
-    top: auto;
-    bottom: 147px;
-    left: 60px;
-    right: auto;
-  }
-}
-
-
-.main-pagination {
-  height: 20px !important;
+  height: 20px;
 
   .swiper-pagination-bullet {
-    width: 20px !important;
+    width: 20px;
     height: 20px;
     font-size: 12px;
     line-height: 18px;
@@ -1004,15 +969,26 @@ main {
   }
 
   @include mobile {
-    height: 40px !important;
+    height: 40px;
+    top: auto;
+    bottom: 10% ;
+    left: 50%;
+    transform: translateX(-50%);
 
     .swiper-pagination-bullet {
-      width: 40px !important;
+      width: 40px;
       height: 40px;
       line-height: 40px;
       font-size: 14px;
-
     }
+  }
+
+  @include laptop {
+    width: 84px;
+    top: auto;
+    bottom: 147px;
+    left: 60px;
+    right: auto;
   }
 }
 
@@ -1550,7 +1526,7 @@ main {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid $border_color;
     margin: 0 10px;
     padding-top: 60px;
     font-family: $heading_font;
@@ -1626,14 +1602,12 @@ main {
 
 
 .summer_card {
-  border: 1px solid #333;
   display: flex;
   flex-direction: column;
 
   img {
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid #333;
     background-color: #e0dfd6;
     display: block;
   }
@@ -1642,6 +1616,7 @@ main {
 
 .summer_card_copy {
   padding: 20px 10px;
+background-color: #eae6db;
 
   h5 {
     overflow: hidden;
