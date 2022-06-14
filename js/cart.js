@@ -4,6 +4,7 @@
 
 let deleteBtn = document.querySelectorAll('.cart_deleteBtn');
 let cartContent = document.querySelectorAll('.cart_summary');
+let productPrice = document.querySelectorAll('.cart_product_price');
 
 let currentItems = cartContent.length;
 
@@ -11,6 +12,7 @@ deleteBtn.forEach((el, index) => {
   el.addEventListener('click', function () {
 
     cartContent[index].style.display = "none";
+    productPrice[index].innerText = 0;
     currentItems -= 1;
 
     if (currentItems <= 0) {
@@ -34,46 +36,15 @@ let subtotal = document.querySelector('.cart_subtotal');
 let total = document.querySelector('.cart_total');
 
 
-cartPrices.forEach((el, index) => {
+const prices = [...document.querySelectorAll('.cart_product_price')];
 
-  // Number(el[index].innerText);
+const initialValue = 0;
+const sumWithInitial = prices.reduce(
+  (previousValue, currentValue) => Number(previousValue.innerText) + Number(currentValue.innerText),
+);
 
-
-  // subtotal.innerHTML = sum;
-
-  let sum = 0;
-
-
-  for (i=0; )
-
-
-
-  sum += Number(el.innerText);
-
-
-  console.log(sum);
-
-});
-
-
-
-
-
-// subtotal.innerText =
-
-
-// let sum = 0;
-
-// for (let i = 0; i < cartPrices.length; i++) {
-//     sum += cartPrices[i];
-// }
-// console.log(sum);
-
-
-
-
-
-
+subtotal.innerText = sumWithInitial.toFixed(2);
+total.innerText = (Number(sumWithInitial) + Number(shipping.innerText)).toFixed(2);
 
 
 
